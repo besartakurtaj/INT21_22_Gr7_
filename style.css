@@ -1,0 +1,83 @@
+div img{
+    padding-left: 170px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+
+.flex-child.first img{
+    width: 440px;
+    height: 500px;
+}
+
+div .flex-child.second{
+    margin-top: 130px;
+    margin-left: 40px;
+}
+
+.flex-child.second p{
+    font-family: system-ui;
+    padding: 15px 15px;
+}
+
+#button1{
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: none;
+    background-color: #E83556;
+    color: white;
+    margin: 10px;
+    font-family: system-ui;
+}
+
+#button1:hover{
+    background-color: #9B2339;
+    color: white;
+}
+
+#button2{
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: none;
+    background-color:#FAA0A0;
+    color: white;
+    margin: 10px;
+    font-family: system-ui;
+}
+#button2:hover{
+    background-color: #ff607d;
+    color: white;
+}
+#button3{
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: none;
+    background-color:#ffcccb;
+    color: white;
+    margin: 10px;
+    font-family: system-ui;
+}
+#button3:hover{
+    background-color:rgb(255, 153, 168);
+    color: white;
+}
+
+a#b1, a#b2, a#b3{
+    text-decoration:none;
+    color: white;
+}
