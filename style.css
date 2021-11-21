@@ -81,3 +81,51 @@ a#b1, a#b2, a#b3{
     text-decoration:none;
     color: white;
 }
+
+.flex-holder{
+    display: flex;
+    background-color: #fcfcfc;
+    margin-top: 60px;
+}
+
+.flex-kid{
+    flex: 1;
+}
+
+.flexkid-1{
+    margin-right: 20px;
+}
+
+.flexkid-1 h3{
+    padding-top: 75px;
+    padding-left: 50px;
+    font-size:20px;
+}
+.flexkid-1 p{
+    font-family: system-ui;
+    padding: 0px 0px 0px 50px;
+    line-height: 28px;
+}
+.flexkid-2 img{
+    width: 731px;
+    height: 500px;
+}
+
+.flexkid-1 p button{
+    background-color: #E83556;
+    border-color: transparent;
+    border-radius:10px;
+    padding: 7px 15px;
+    color: white;
+    margin-top:15px ;
+}
+
+.flexkid-1 p button a{
+    text-decoration: none;
+    color: white;
+}
+
+.flexkid-1 p button:hover{
+    background-color:#9B2339;
+    color: white;
+}
