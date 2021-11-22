@@ -129,6 +129,64 @@ a#b1, a#b2, a#b3{
     background-color:#9B2339;
     color: white;
 }
+
+#serviceh2{
+    font-size: 40px;
+    text-align: center;
+    color: #E83556;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-top: 50px;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services div{
+    display: inline-block;
+}
+
+.articles{
+    background-color:#E83556;
+    padding:50px 42px;
+}
+
+.articles h3{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.articles button{
+    background-color: white;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 2px 20px;
+}
+
+.articles button a{
+    text-transform: lowercase;
+    font-family: inherit;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.articles button:hover {
+    background-color: #9B2339;
+}
+
+.firstimage img, .secondimage img{
+    padding: 15px;
+}
+
+
+
+/*Pjesa e Besartes*/
 .more{
     background-color: #E83556;
     border-color: transparent;
@@ -136,5 +194,4 @@ a#b1, a#b2, a#b3{
     padding: 7px 15px;
     color: white;
     margin-top:15px ;
-
 }
