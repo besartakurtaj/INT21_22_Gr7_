@@ -129,3 +129,12 @@ a#b1, a#b2, a#b3{
     background-color:#9B2339;
     color: white;
 }
+.more{
+    background-color: #E83556;
+    border-color: transparent;
+    border-radius:10px;
+    padding: 7px 15px;
+    color: white;
+    margin-top:15px ;
+
+}

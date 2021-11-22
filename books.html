@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         h1{
             padding:0px 20px 10px 280px;
@@ -34,10 +35,14 @@
         
             margin-right: 80px;
         }
-        #b{
-            width: 376px;
-    height: 233px;
-            background-color: gray;
+        .i{
+            margin-top: 150px;
+    width: 450px;
+    height: 300px;
+    background-color: gray;
+    margin-left: 350px;
+    position: absolute;
+    top: 2px;
         }
         h2{
             text-align: center;
@@ -61,22 +66,56 @@ a{
     color: white;
     
 }
+.n{
+    position: relative;
+}
+.image{
+    width: 50%;
+    height: 50%;
+}
+
+.paragraph{
+    width: 40%;
+    height: 30%;
+}
+
+.paragraph p{
+    background-color: lightgrey;
+    font-family: sans-serif;
+    padding: 50px;
+}
+
+div div{
+    display: inline-block;
+}
+
     </style>
 </head>
 <body>
    
     <header class="navbar">
         <h1>self-help blog</h1>
-    <ul>
-        <li><a class="nav" href="projekti.html" target="_blank">HOME</a></li>
-        <li><a class="nav" href="#">ABOUT</a></li>
-        <li><a class="nav" href="#">BLOG</a></li>
-        <li><a class="nav" href="books.html">RESOURCES</a></li>
-        <li><a class="nav" href="#">MORE</a></li>
-    </ul>
-</header>
+        <ul>
+            <li><a class="nav" href="projekti.html" target="_blank">HOME</a></li>
+            <li><a class="nav" href="#">ABOUT</a></li>
+            <li><a class="nav" href="#">BLOG</a></li>
+            <li><a class="nav" href="books.html">RESOURCES</a></li>
+            <li><a class="nav" href="#">MORE</a></li>
+        </ul>
+   </header>
 
-<div>
+   <div class="n">
+       <div class="paragraph">
+           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.<br>
+           <button class="more"><a href="#">More</a></button></p>
+       </div>
+       <div class="image">
+           <img src="foto.1.jpg" width="95%" height="80%;">
+       </div>
+   </div>
+
+<!--
+<div class="n">
     <div id="foto">
         <p><img src="foto.1.jpg" alt="books" width="54%" height="54%"></p>
 
@@ -94,6 +133,7 @@ a{
 
     </div>
 </div>
+-->
 
 
 
