@@ -129,6 +129,8 @@ a#b1, a#b2, a#b3{
     background-color:#9B2339;
     color: white;
 }
+
+/* Besarta*/
 .more{
     background-color: #E83556;
     border-color: transparent;
@@ -137,4 +139,24 @@ a#b1, a#b2, a#b3{
     color: white;
     margin-top:15px ;
 
+}
+.title{
+    text-align: center;
+
+}
+.l1{
+    position: absolute;
+    width: 255px;
+    height: 400px;
+    text-align: center;
+    border: 7px solid #f0f0f0;
+    background-color: white;
+    padding: 40px;
+    font-family: Arial;
+}
+.librat{
+    position: relative;
+    height: 400px;
+    left: 15%;
+    width: 800px;
 }
