@@ -144,19 +144,11 @@ a#b1, a#b2, a#b3{
     text-align: center;
 
 }
-.l1{
-    position: absolute;
-    width: 255px;
-    height: 400px;
+.titleB{
     text-align: center;
-    border: 7px solid #f0f0f0;
-    background-color: white;
-    padding: 40px;
-    font-family: Arial;
+
 }
-.librat{
-    position: relative;
-    height: 400px;
-    left: 15%;
-    width: 800px;
+.booksStyle{
+    width: 486px;
+    height: 263px;
 }
