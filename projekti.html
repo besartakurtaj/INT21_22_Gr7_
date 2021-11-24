@@ -29,9 +29,14 @@
         a.nav:hover{
             color: #E21C21;
         }
+
+        hr{
+            width: 160px;
+        }
+
     </style>
 </head>
-<body style="background-color: white;">
+<body style="background-color: white; margin: 0px;">
     <header class="navbar">
         <h1>self-help blog</h1>
         <ul>
@@ -42,6 +47,8 @@
             <li><a class="nav" href="#">MORE</a></li>
         </ul>
     </header>
+
+    <!--pjesa 1-->
     <div class="flex-container">
         <div class="flex-child first">
             <img src="homepage.png">
@@ -59,6 +66,8 @@
             </div>
         </div>
     </div>
+
+    <!--pjesa 2-->
     <div class="flex-holder">
         <div class="flexkid-1">
             <h3>
@@ -75,6 +84,8 @@
             <img src="pinkdesert.PNG">
         </div>
     </div>
+
+    <!--our services-->
     <h2 id="serviceh2">OUR SERVICES</h1>
     <div class="services">
             <div class="articles">
@@ -82,21 +93,86 @@
                 <button><a href="#">MORE</a></button>
             </div>
             <div class="firstimage">
-                <img src="img1.jpeg" height="180px" width="170px">
+                <img src="img1.jpeg" height="212px" width="180px">
             </div>
             <div class="articles">
                 <h3>BOOKS</h3>
                 <button><a href="#">MORE</a></button>
             </div>
             <div class="secondimage">
-                <img src="img3.png" height="180px" width="170px">
+                <img src="img3.png" height="212px" width="180px">
             </div>
             <div class="articles">
                 <h3>MEETINGS</h3>
                 <button><a href="#">MORE</a></button>
             </div>
+    </div>
+
+    <!--FAQ-->
+    <div class="faq">
+        <div class="blackLayer"></div>
+        <h1 id="question">Frequently asked<br>questions</h2>
+           <div class="center">
+            <button id="see_answers"><a href="#">See Answers</a></button>
+           </div>
 
     </div>
+
+    <!--meet our team-->
+    <div class="meetourteam">
+        <h2 id="introduction">Meet our team</h2>
+        <hr 1px solid black>
+        <div class="team">
+            <div class="member">
+                <div class="img">
+                    <img src="member1.jpg">
+                </div>
+                <h4><i>Jane Doe</i></h4>
+                <p>
+                    I'm a paragraph. <br>
+                    U can edit me later.
+                </p>
+            </div>
+            <div class="member">
+                <div class="img">
+                    <img src="member2.jpg">
+                </div>
+                <h4><i>Jane Doe</i></h4>
+                <p>
+                    I'm a paragraph. <br>
+                    U can edit me later.
+                </p>
+            </div>
+            <div class="member">
+                <div class="img">
+                    <img src="member3.jpg">
+                </div>
+                <h4><i>Jane Doe</i></h4>
+                <p>
+                    I'm a paragraph. <br>
+                    U can edit me later.
+                </p>
+            </div>
+        </div>
+    </div>
+
+   <div class="information">
+       <div class="subscribe">
+           <form>
+               <h4>Join our mailing list</h4>
+               <label for="email">e-mail:<br></label>
+               <input type="email" id="email" name="email">
+               <button><a href="#">Subscribe</a></button>
+               <span>Thank u for subscribing!</span>
+           </form>
+       </div>
+
+
+       <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.5926651603654!2d21.164962014842946!3d42.64879462481199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec1b6ecb2c1%3A0x7f0893730efce187!2sFakulteti%20Teknik!5e0!3m2!1ssq!2s!4v1637790248952!5m2!1ssq!2s" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       </div>
+
+   </div>
 
 </body>
 </html>
