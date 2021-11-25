@@ -5,10 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+        padding: 2.3rem 2.2rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;}
+    </style>
     
 </head>
 <body>
    
+    <form action="">
+        <h3>Buy now</h3>
+        <div class="input-container">
+            <input type="text" name="name" id="name">
+            <label for="name">Name</label>
+            <span>
+                ::before
+                "Name"
+                ::after
+            </span>
+        </div>
+        <div class="input-conatiner">
+            <input type="email" name="email" id="email">
+            <label for="email">Email</label>
+            <span>
+                ::before
+                "Email"
+                ::after
+            </span>
+        </div>
+        <div class="input-container">
+            <input type="number" name="number" id="number">
+            <label for="number">Phone number</label>
+            <span>
+                ::before
+                "Phone number"
+                ::after
+            </span>
+        </div>
+        <input id="submitBtn" type="submit" value="Submit" class="btn">
+
+
+
+
+
+
+
+
+    </form>
 
 </body>
 </html>
