@@ -1,3 +1,26 @@
+h1{
+    padding:0px 20px 10px 280px;
+    font-size: 42px;
+    color: #FAA0A0;
+}
+
+h1, ul, li{
+    display: inline-block;
+}
+
+a.nav{
+    padding: 5px 13px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #8B8B8B;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a.nav:hover{
+    color: #E21C21;
+}
+
 div img{
     padding-left: 170px;
 }
@@ -435,6 +458,49 @@ img.logo1{
 img.logo2{
     margin-left: 5px;
     margin-top: 5px;
+}
+.imageabout img{
+    width: 750px;
+    height: 400px;
+    padding: 0px;
+}
+
+.divholder{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.divholder div{
+    display: inline-block;
+}
+
+.imageabout{
+    padding-right: 400px;
+    padding-top: 50px;
+}
+
+.text-overlap{
+    padding: 60px;
+    position: absolute;
+    top: 430px;
+    left:50%;
+    width: 450px;
+    height:190px;
+    margin: -60px;
+    background: whitesmoke;
+}
+
+.text-overlap h2{
+    color: #666666;
+    font-size: 42px;
+    font-family: system-ui;
+}
+
+.text-overlap p{
+    color: gray;
+    text-align: left;
+    font-family: system-ui;
 }
 
 
