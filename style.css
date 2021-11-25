@@ -367,7 +367,73 @@ a#b1, a#b2, a#b3{
     margin-top: 50px;
 }
 
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call, .mail, .follow, .copyright{
+    width: 150px;
+}
+.call, .mail, .follow, .copyright{
+    padding-left: 70px;
+}
+
+.call img, .call p{
+    display: inline-block;
+    padding: 0;
+}
+
+.call img{
+    color: #E83556;
+}
+
+.call p{
+    margin: 0;
+    width: 115px;
+    color: #E83556;
+    font-family: system-ui;
+    font-size: 14px;
+}
+
+.mail img{
+    padding: 0;
+}
+
+.follow h5, .follow img{
+    display: inline-block;
+    margin:0;
+    padding: 0;
+}
+
+.mail address{
+    display: inline-block;
+}
+
+.copyright{
+    width: 280px;
+}
+
+.copyright p, .mail address, .follow h5{
+    font-family: system-ui;
+    font-size: 14px;
+    color: #E83556;
+}
+img.logo1{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+img.logo2{
+    margin-left: 5px;
+    margin-top: 5px;
+}
 
 
 
@@ -424,3 +490,4 @@ a#b1, a#b2, a#b3{
     width: 486px;
     height: 263px;
 }
+
