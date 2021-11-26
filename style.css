@@ -286,9 +286,10 @@ a#b1, a#b2, a#b3{
     color: white;
     text-align: center;
     font-size: 80px;
-    font-family: system ui;
+    font-family: -webkit-pictograph;
     text-transform: uppercase;
     padding-top: 130px;
+    padding: 130px 20px 10px 310px;
 }
 
 #see_answers{
@@ -675,6 +676,7 @@ div.header h3{
     color: #6c757d!important;
     font-family: sans-serif;
     line-height: 1.60;
+    margin-bottom: 100px;
 }
 
 .circle4 img{
