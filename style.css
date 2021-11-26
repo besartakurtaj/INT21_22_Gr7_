@@ -110,7 +110,7 @@ a#b1, a#b2, a#b3{
 
 .flex-holder{
     display: flex;
-    background-color: #fcfcfc;
+    background-color: whitesmoke;
     margin-top: 60px;
 }
 
@@ -220,7 +220,7 @@ a#b1, a#b2, a#b3{
 }
 
 .meetourteam{
-    background-color: #fcfcfc;
+    background-color:whitesmoke;
     height: 625px;
 }
 
@@ -331,7 +331,7 @@ a#b1, a#b2, a#b3{
 
 .subscribe form{
     width: 350px;
-    background-color: #fcfcfc;
+    background-color: whitesmoke;
     padding-top: 20px;
     padding-left:90px;
     padding-bottom: 40px;
@@ -502,6 +502,200 @@ img.logo2{
     text-align: left;
     font-family: system-ui;
 }
+
+div.header h2{
+    text-align: center !important;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: fonti1;
+    margin-bottom: 15px;
+    padding-top: 30px;
+}
+
+div.header h3{
+    font-size: 18px;
+    text-align: center !important;
+    margin-top: 0px;
+    font-style: italic;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+.info_text_one{
+    display: inline-block;
+    text-align: end;
+    margin-left:190px;
+    width:25%;
+}
+
+.info_text_one h1{
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    font-weight: 790;
+    padding: 0px;
+}
+
+.info_text_one p{
+    width: 337px;
+    display: inline-block;
+    font-size: 1rem;
+    color: #6c757d!important;
+    font-family: sans-serif;
+    line-height: 1.60;
+    padding-right: 277px;
+}
+
+.about hr{
+    height: 197px;
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 663px;
+}
+
+.about div{
+    display: inline-block;
+}
+
+.circle1 img{
+    margin-left: 50px;
+    border-radius: 50%;
+    width: 156px;
+    height: 156px;
+    border: 7px solid #e9ecef;
+    padding: 0px;
+}
+
+.circle2 img{
+    margin-left: 577px;
+    border-radius: 50%;
+    width: 156px;
+    height: 156px;
+    border: 7px solid #e9ecef;
+    padding: 0px;
+}
+
+.circle3 img{
+    margin-left: 535px;
+    border-radius: 50%;
+    width: 156px;
+    height: 156px;
+    border: 7px solid #e9ecef;
+    padding: 0px;
+}
+
+.circle4 img{
+    margin-left: 535px;
+    border-radius: 50%;
+    width: 156px;
+    height: 156px;
+    border: 7px solid #e9ecef;
+    padding: 0px;
+}
+
+.circle5 img{
+    margin-top: 174px;
+    margin-left: 535px;
+    border-radius: 50%;
+    width: 156px;
+    height: 156px;
+    border: 7px solid #e9ecef;
+    padding: 0px;
+}
+
+.about div div img{
+    margin-top: 176px;
+}
+
+.info_text_two{
+    margin-left:48px;
+}
+
+.info_text_two h1{
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    font-weight: 790;
+    padding: 0px;
+}
+
+.info_text_two p{
+    display: block;
+    width: 337px;
+    font-size: 1rem;
+    color: #6c757d!important;
+    font-family: sans-serif;
+    line-height: 1.60;
+}
+
+.info_text_three{
+    margin-left: 193px;
+    text-align: end;
+}
+
+.info_text_three h1{
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    font-weight: 790;
+    padding: 0px;
+}
+
+.info_text_three p{
+    display: block;
+    width: 337px;
+    font-size: 1rem;
+    color: #6c757d!important;
+    font-family: sans-serif;
+    line-height: 1.60;
+}
+
+.circle3 img{
+    margin-left: 40px;
+}
+
+.info_text_four{
+    width: 25%;
+    margin-left: 48px;
+}
+
+.info_text_four h1{
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    font-weight: 790;
+    padding: 0px;
+}
+
+
+.info_text_four p{
+    width: 337px;
+    display: inline-block;
+    font-size: 1rem;
+    color: #6c757d!important;
+    font-family: sans-serif;
+    line-height: 1.60;
+}
+
+.circle4 img{
+    margin-left: 580px;
+    margin-top: 175px;
+}
+
+h2.apart{
+    margin-left: -127px;
+    position: absolute;
+    top: 2858px;
+    text-align: center;
+    font-family: system-ui;
+}
+
+#divider{
+    width: 40%;
+    margin-top: 50px;
+}
+
+
 
 
 
