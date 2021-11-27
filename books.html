@@ -65,23 +65,52 @@ a{
     
 }
 .n{
+    
+    background-image: url(foto.1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    text-align: center;
     position: relative;
 }
-.image{
-    width: 50%;
-    height: 50%;
-}
+
 
 .paragraph{
-    width: 40%;
+    width: 90%;
     height: 30%;
+    top: 89px;
+    font-family: sans-serif;
+    padding-top: 50px;
+   text-align: center;
+   filter: none;
+   color:white ;
 }
 
+
 .paragraph p{
-    background-color: lightgrey;
-    font-family: sans-serif;
-    padding: 50px;
+text-align: center;
+font-size: 30px;
+filter: none;
+color: white;
 }
+
+.paragraph h2 {
+font-style: italic;
+font-size: 40px;
+}
+
+.ngjyra{
+background-color: black;
+position: absolute;
+left: 20%;
+top: 180px;
+width: 65%;
+opacity: 35%;
+padding-bottom: 50px;
+}
+
+
 
 div div{
     display: inline-block;
@@ -123,7 +152,7 @@ div div{
     margin-left: 220px;
 }
 .fourthB{
-    margin-left: 236px;
+    margin-left: 303px;
     margin-top: 34px;
 }
 .price{
@@ -145,7 +174,10 @@ div div{
     margin-top: 114px;
 }
 .firstB{
-    margin-left: 45px;
+    margin-left: 65px;
+}
+.paragrafi01{
+    text-align: center;
 }
 
 </style>
@@ -156,7 +188,7 @@ div div{
         <h1>self-help blog</h1>
         <ul>
             <li><a class="nav" href="projekti.html" target="_blank">HOME</a></li>
-            <li><a class="nav" href="#">ABOUT</a></li>
+            <li><a class="nav" href="about.html">ABOUT</a></li>
             <li><a class="nav" href="#">BLOG</a></li>
             <li><a class="nav" href="books.html">RESOURCES</a></li>
             <li><a class="nav" href="#">MORE</a></li>
@@ -164,13 +196,15 @@ div div{
    </header>
 
    <div class="n">
+       <div class="ngjyra">
        <div class="paragraph">
-           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.<br>
-           <button class="more"><a href="#">More</a></button></p>
+           <h2>Favorite Resources</h2>
+           <hr>
+           <p>If you want to know my top recommendations for books, podcasts, and products to uplevel your mind, you'll find the answers here!<br>
+           </p>
        </div>
-       <div class="image">
-           <img src="foto.1.jpg" width="95%" height="80%;">
-       </div>
+    </div>
+       
    </div>
 
 
@@ -186,7 +220,7 @@ div div{
            
             <p class="p1">A self-care journal to help you create more time for what you love without burning yourself out</p>
              <p class="price">$22</p>
-           <button class="BuyBtn"><a href="buy_now.html">Buy now</a></button>
+           <button class="BuyBtn"><a href="buy_now.html" target="_blank">Buy now</a></button>
        </div>
        <div class="secondB">
            <p class="p2"><b>The Ultimate Self-Care Toolkit</b></p>
@@ -194,28 +228,28 @@ div div{
         
         <p class="p1">A digital collection of the best self-care tips, tricks, and tools to nourish your mind, body, and soul</p>
         <p class="price">$10</p>
-        <button class="BuyBtn"><a href="buy_now.html">Buy now</a></button>
+        <button class="BuyBtn"><a href="buy_now.html" target="_blank">Buy now</a></button>
     </div>
     <div class="thirdB">
         <p class="p2"><b>The Ultimate Mindset Affirmations Toolkit</b></p>
         <img src="b3.png" id="b33">
         <p class="p1">A practical affirmations guide for overthinkers to reduce stress, gain confidence, and overcome limiting beliefs</p>
         <p class="price">$10</p>
-        <button class="BuyBtn"><a href="buy_now.html">Buy now</a></button>
+        <button class="BuyBtn"><a href="buy_now.html" target="_blank">Buy now</a></button>
     </div>
     <div class="fourthB">
         <p class="p2"><b>Master Your Mindset Journaling Guide</b></p>
         <img src="b4.png" id="b44">
         <p class="p1">A guide to starting a daily journaling routine for a healthier mindset (even if you don't know what to write about)</p>
         <p class="price">$10</p>
-        <button class="BuyBtn"><a href="buy_now.html">Buy now</a></button>
+        <button class="BuyBtn"><a href="buy_now.html" target="_blank">Buy now</a></button>
     </div>
     <div class="fifthB">
         <p class="p2"><b>Daily Mindset Journal</b></p>
         <img src="b5.png" id="b44">
         <p class="p1">A printable daily journal template to elevate your thoughts, improve your confidence, and move you closer to your goals</p>
         <p class="price">$5</p>
-        <button class="BuyBtn"><a href="buy_now.html">Buy now</a></button>
+        <button class="BuyBtn"><a href="buy_now.html" target="_blank">Buy now</a></button>
     </div>
 
 
@@ -231,9 +265,36 @@ div div{
 
    </div>
 
-  
+  <br><br><br>
 
-
+<!--FOOTER-->
+<footer style="background-color: whitesmoke;">
+    <div class="call">
+        <img src="call.png">
+        <p>
+            <span>Call:<br></span>
+            T: 123-456-7890<br> F: 123-456-7890
+        </p>
+    </div>
+    <div class="mail">
+        <img src="email.png">
+        <address>
+            Email: <br>
+            <mail to:bleonajashari9@gmail.com>info@mysite.com</mail>
+        </address>
+    </div>
+    <div class="follow">
+        <img src="plus.png"> 
+        <h5>Follow me:<br>
+            <img class="logo1" src="instagram.png">
+            <img class="logo2" src="facebook-logo.png">
+        </h5>
+    </div>
+    <div class="copyright">
+        <p>&copy;Proudly created by: <br>
+     Bleona Jashari,Besarta Kurtaj, Blinera Kadriu</p>
+    </div>
+</footer>
 
 
 
