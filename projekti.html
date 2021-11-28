@@ -1,205 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>self-help blog</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <style>
-        h1{
-            padding:0px 20px 10px 280px;
-            font-size: 42px;
-            color: #FAA0A0;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>self-help blog</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+  <style>
+    /* NAVIGATION */
+    nav {
+      width: 80%;
+      margin: 0 auto;
+      background: #fff;
+    }
 
-        h1, ul, li{
-            display: inline-block;
-        }
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
 
-        a.nav{
-            padding: 5px 13px;
-            font-family: monospace;
-            font-size: 16px;
-            color: #8B8B8B;
-            font-weight: bolder;
-            text-decoration: none;
-        }
+    nav ul li {
+      display: inline-block;
+    }
 
-        a.nav:hover{
-            color: #E21C21;
-        }
+    nav ul li a {
+      display: block;
+      padding: 15px;
+      font-family: monospace;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-weight: bolder;
+      text-decoration: none;
+      color: #aaa;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0px 4px;
+    }
 
-        hr{
-            width: 160px;
-        }
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+      transition: all .5s;
+    }
 
-    </style>
+    nav ul li a:hover {
+      color: #555;
+    }
+
+    nav.stroke ul li a,
+    nav.fill ul li a {
+      position: relative;
+    }
+
+    nav.stroke ul li a:after,
+    nav.fill ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #aaa;
+      height: 1px;
+    }
+
+    nav.stroke ul li a:hover:after {
+      width: 100%;
+    }
+
+    nav.fill ul li a {
+      transition: all 5s;
+    }
+
+    nav.fill ul li a:after {
+      text-align: left;
+      content: '.';
+      margin: 0;
+      opacity: 0;
+    }
+
+    nav.fill ul li a:hover {
+      color: #fff;
+      z-index: 1;
+    }
+
+    nav.fill ul li a:hover:after {
+      z-index: -10;
+      animation: fill 1.5s forwards;
+      -webkit-animation: fill 1.5s forwards;
+      -moz-animation: fill 1.5s forwards;
+      opacity: 1;
+    }
+
+    /* Keyframes */
+    @keyframes fill {
+      0% {
+        width: 0%;
+        height: 1px;
+      }
+
+      50% {
+        width: 100%;
+        height: 1px;
+      }
+
+      100% {
+        width: 100%;
+        height: 100%;
+        background: #e83556;
+      }
+    }
+
+    h1 {
+      padding: 0px 20px 10px 280px;
+      font-size: 42px;
+      color: #FAA0A0;
+    }
+
+    .hovermenu {
+      display: flex;
+    }
+
+    .hovermenu h1 {
+      width: 25%;
+      padding: 10px 0px 5px 250px;
+      font-size: 40px;
+    }
+
+    **/ hr {
+      width: 160px;
+    }
+  </style>
 </head>
+
 <body style="background-color: white; margin: 0px;">
-    <header class="navbar">
-        <h1>self-help blog</h1>
-        <ul>
-            <li><a class="nav" href="#">HOME</a></li>
-            <li><a class="nav" href="#">ABOUT</a></li>
-            <li><a class="nav" href="#">BLOG</a></li>
-            <li><a class="nav" href="books.html" target="_blank">RESOURCES</a></li>
-            <li><a class="nav" href="more.html">MORE</a></li>
-        </ul>
+  </header>
+    <header style="background: white; color: rgba(255, 255, 255, 0.5);">
+        <div class="hovermenu">
+            <h1>self-help blog</h1>
+        <nav class="fill">
+          <ul>
+            <li><a href="projekti.html" target="_self">Home</a></li>
+            <li><a href="about.html" target="_self">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="books.html" target="_self">Resources</a></li>
+            <li><a href="more.html" target="_self">More</a></li>
+          </ul>
+        </nav>
+        </div>
     </header>
 
-    <!--pjesa 1-->
-    <div class="flex-container">
-        <div class="flex-child first">
-            <img src="homepage.png">
-        </div>
-        <div class="flex-child second">
-            <div>
-                <button id="button1"><a id="b1" href="#">BOOKS</a></button>
-                <button id="button2"><a id="b2" href="#">STORIES</a></button>
-                <button id="button3"><a id="b3" href="#">CHAT</a></button>
+  <!--pjesa 1-->
+  <div class="flex-container">
+    <div class="flex-child first">
+      <img src="homepage.png">
+    </div>
+    <div class="flex-child second">
+      <div>
+        <button id="button1">BOOKS</button>
+        <button id="button2"><a id="b2" href="#">STORIES</a></button>
+        <button id="button3"><a id="b3" href="#">CHAT</a></button>
 
-                <p>
-                    Welcome to self-love juice.<br>
-                    We are here to help you organize your thoughts, relax your mind, and <br>overcome your doubts so you can stop stressing about the future and<br> make things happen now. If you are interested in making your life<br> more blissful right now, we have some resources to help you so<br> please enjoy the ride.
-                </p>
-            </div>
-        </div>
+        <p>
+          Welcome to self-love juice.<br>
+          We are here to help you organize your thoughts, relax your mind, and <br>overcome your doubts so you can stop
+          stressing about the future and<br> make things happen now. If you are interested in making your life<br> more
+          blissful right now, we have some resources to help you so<br> please enjoy the ride.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--pjesa 2-->
+  <div class="flex-holder">
+    <div class="flexkid-1">
+      <h3>
+        <b><u>Hey lovely,</u></b>
+      </h3>
+      <p>
+        <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</i><br>
+        <button><a href="#">MORE</a></button>
+      </p>
+
     </div>
 
-    <!--pjesa 2-->
-    <div class="flex-holder">
-        <div class="flexkid-1">
-            <h3>
-                <b><u>Hey lovely,</u></b>
-            </h3>
-            <p>
-                <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i><br>
-                <button><a href="#">MORE</a></button>
-            </p>
-    
-        </div>
-    
-        <div class="flexkid-2">
-            <img src="p1.jpg">
-        </div>
+    <div class="flexkid-2">
+      <img src="p1.jpg">
     </div>
+  </div>
 
-    <!--our services-->
-    <h2 id="serviceh2">OUR SERVICES</h1>
+  <!--our services-->
+  <h2 id="serviceh2">OUR SERVICES</h1>
     <div class="services">
-            <div class="articles">
-                <h3>Articles</h3>
-                <button><a href="#">MORE</a></button>
-            </div>
-            <div class="firstimage">
-                <img src="img1.jpeg" height="212px" width="180px">
-            </div>
-            <div class="articles">
-                <h3>BOOKS</h3>
-                <button><a href="#">MORE</a></button>
-            </div>
-            <div class="secondimage">
-                <img src="img3.png" height="212px" width="180px">
-            </div>
-            <div class="articles">
-                <h3>MEETINGS</h3>
-                <button><a href="#">MORE</a></button>
-            </div>
+      <div class="articles">
+        <h3>Articles</h3>
+        <button><a href="#">MORE</a></button>
+      </div>
+      <div class="firstimage">
+        <img src="img1.jpeg" height="212px" width="180px">
+      </div>
+      <div class="articles">
+        <h3>BOOKS</h3>
+        <button><a href="#">MORE</a></button>
+      </div>
+      <div class="secondimage">
+        <img src="img3.png" height="212px" width="180px">
+      </div>
+      <div class="articles">
+        <h3>MEETINGS</h3>
+        <button><a href="#">MORE</a></button>
+      </div>
     </div>
 
     <!--FAQ-->
     <div class="faq">
-        <div class="blackLayer"></div>
-        <h1 id="question">Frequently asked<br>questions</h2>
-           <div class="center">
-            <button id="see_answers"><a href="#">See Answers</a></button>
-           </div>
+      <div class="blackLayer"></div>
+      <h1 id="question">Frequently asked<br>questions
+  </h2>
+  <div class="center">
+    <button id="see_answers"><a href="#">See Answers</a></button>
+  </div>
 
-    </div>
+  </div>
 
-    <!--meet our team-->
-    <div class="meetourteam">
-        <h2 id="introduction">Meet our team</h2>
-        <hr 1px solid black>
-        <div class="team">
-            <div class="member">
-                <div class="img">
-                    <img src="member1.jpg">
-                </div>
-                <h4><i>Jane Doe</i></h4>
-                <p>
-                    I'm a paragraph. <br>
-                    U can edit me later.
-                </p>
-            </div>
-            <div class="member">
-                <div class="img">
-                    <img src="member2.jpg">
-                </div>
-                <h4><i>Jane Doe</i></h4>
-                <p>
-                    I'm a paragraph. <br>
-                    U can edit me later.
-                </p>
-            </div>
-            <div class="member">
-                <div class="img">
-                    <img src="member3.jpg">
-                </div>
-                <h4><i>Jane Doe</i></h4>
-                <p>
-                    I'm a paragraph. <br>
-                    U can edit me later.
-                </p>
-            </div>
+  <!--meet our team-->
+  <div class="meetourteam">
+    <h2 id="introduction">Meet our team</h2>
+    <hr 1px solid black>
+    <div class="team">
+      <div class="member">
+        <div class="img">
+          <img src="member1.jpg">
         </div>
+        <h4><i>Jane Doe</i></h4>
+        <p>
+          I'm a paragraph. <br>
+          U can edit me later.
+        </p>
+      </div>
+      <div class="member">
+        <div class="img">
+          <img src="member2.jpg">
+        </div>
+        <h4><i>Jane Doe</i></h4>
+        <p>
+          I'm a paragraph. <br>
+          U can edit me later.
+        </p>
+      </div>
+      <div class="member">
+        <div class="img">
+          <img src="member3.jpg">
+        </div>
+        <h4><i>Jane Doe</i></h4>
+        <p>
+          I'm a paragraph. <br>
+          U can edit me later.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--newsletter and map-->
+  <div class="information">
+    <div class="subscribe">
+      <form>
+        <h4>Join our mailing list</h4>
+        <label for="email">e-mail:<br></label>
+        <input type="email" id="email" name="email">
+        <button><a href="#">Subscribe</a></button>
+        <span>Thank u for subscribing!</span>
+      </form>
     </div>
 
-   <div class="information">
-       <div class="subscribe">
-           <form>
-               <h4>Join our mailing list</h4>
-               <label for="email">e-mail:<br></label>
-               <input type="email" id="email" name="email">
-               <button><a href="#">Subscribe</a></button>
-               <span>Thank u for subscribing!</span>
-           </form>
-       </div>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.5926651603654!2d21.164962014842946!3d42.64879462481199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec1b6ecb2c1%3A0x7f0893730efce187!2sFakulteti%20Teknik!5e0!3m2!1ssq!2s!4v1637790248952!5m2!1ssq!2s"
+        width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
 
 
-       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.5926651603654!2d21.164962014842946!3d42.64879462481199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec1b6ecb2c1%3A0x7f0893730efce187!2sFakulteti%20Teknik!5e0!3m2!1ssq!2s!4v1637790248952!5m2!1ssq!2s" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-       </div>
-   </div>
-
-   <footer style="background-color: #fcfcfc;">
-       <div class="call">
-           <img src="call.png">
-           <p>
-               <span>Call:<br></span>
-               T: 123-456-7890<br> F: 123-456-7890
-           </p>
-       </div>
-       <div class="mail">
-           <img src="email.png">
-           <address>
-               Email: <br>
-               <mail to:bleonajashari9@gmail.com>info@mysite.com</mail>
-           </address>
-       </div>
-       <div class="follow">
-           <img src="plus.png"> 
-           <h5>Follow me:<br>
-               <img class="logo1" src="instagram.png">
-               <img class="logo2" src="facebook-logo.png">
-           </h5>
-       </div>
-       <div class="copyright">
-           <p>&copy;Proudly created by: <br>
-        Bleona Jashari,Besarta Kurtaj, Blinera Kadriu</p>
-       </div>
-   </footer>
+  <!--FOOTER-->
+  <footer style="background-color: whitesmoke;">
+    <div class="call">
+      <img src="call.png">
+      <p>
+        <span>Call:<br></span>
+        T: 123-456-7890<br> F: 123-456-7890
+      </p>
+    </div>
+    <div class="mail">
+      <img src="email.png">
+      <address>
+        Email: <br>
+        <mail to:bleonajashari9@gmail.com>info@mysite.com</mail>
+      </address>
+    </div>
+    <div class="follow">
+      <img src="plus.png">
+      <h5>Follow me:<br>
+        <img class="logo1" src="instagram.png">
+        <img class="logo2" src="facebook-logo.png">
+      </h5>
+    </div>
+    <div class="copyright">
+      <p>&copy;Proudly created by: <br>
+        Bleona Jashari, Besarta Kurtaj, Blinera Kadriu</p>
+    </div>
+  </footer>
 
 </body>
+
 </html>
