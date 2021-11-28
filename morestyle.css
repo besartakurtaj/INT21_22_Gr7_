@@ -172,7 +172,7 @@ footer{
 }
 
 .call, .mail, .follow, .copyright{
-    width: 150px;
+    width: 220px;
 }
 .call, .mail, .follow, .copyright{
     padding-left: 70px;
@@ -210,7 +210,7 @@ footer{
 }
 
 .copyright{
-    width: 280px;
+    width: 345px;
 }
 
 .copyright p, .mail address, .follow h5{
