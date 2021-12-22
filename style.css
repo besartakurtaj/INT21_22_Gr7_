@@ -438,7 +438,8 @@ a#b1, a#b2, a#b3{
 
 #see_answers:hover{
     background-color:#9B2339 ;
-    padding: 15px 25px;
+    transform: scale(1.2);
+    transition: transform 1s;
     color: white;
     cursor: pointer;
 }
@@ -832,6 +833,12 @@ h2.apart{
 }
 
 
+/*about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
 
 
 
