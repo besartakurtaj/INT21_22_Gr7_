@@ -7,6 +7,9 @@
     <title>Books</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body{
+            margin: 0px;
+        }
         h1{
             padding:0px 20px 10px 280px;
             font-size: 42px;
@@ -35,19 +38,6 @@
         
             margin-right: 80px;
         }
-        .i{
-            margin-top: 150px;
-    width: 450px;
-    height: 300px;
-    background-color: gray;
-    margin-left: 350px;
-    position: absolute;
-    top: 2px;
-        }
-        
-.paragrafi{
-    text-align: justify;
-}
 
 #f button{ 
     
@@ -64,60 +54,69 @@ a{
     color: white;
     
 }
-.n{
-    
-    background-image: url(foto.1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 700px;
-    width: 100%;
+/*Part 1*/
+.bookimage img{
+    width:1000px;
+    height:550px;
+    padding:0px;
+}
+
+.divholder{
+    display: flex;
+    justify-content: center;
+}
+
+.divholder div{
+    display: inline-block;
+}
+
+.bookimage{
+    padding-right:320px;
+    padding-top: 90px;
+}
+
+.textoverlap{
+    padding: 60px;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    width: 600px;
+    height: 200px;
+    margin: -60px;
+    background: whitesmoke;
+}
+
+.textoverlap h2{
+    color: #666666;
+    font-size: 42px;
+    font-family: system-ui;
+    padding: 10px;
+    font-weight: unset;
+}
+
+.textoverlap p{
+    color: gray;
     text-align: center;
-    position: relative;
+    font-family: system-ui;
+    margin: 0px;
+    margin-top: 25px;
+    font-size:18px;
+}
+
+hr{
+    width: 15%;
+    margin-bottom: 100px;
 }
 
 
-.paragraph{
-    width: 90%;
-    height: 30%;
-    top: 89px;
-    font-family: sans-serif;
-    padding-top: 50px;
-   text-align: center;
-   filter: none;
-   color:white ;
-}
-
-
-.paragraph p{
-text-align: center;
-font-size: 30px;
-filter: none;
-color: white;
-}
-
-.paragraph h2 {
-font-style: italic;
-font-size: 40px;
-}
-
-.ngjyra{
-background-color: black;
-position: absolute;
-left: 20%;
-top: 180px;
-width: 65%;
-opacity: 35%;
-padding-bottom: 50px;
-}
-
-
-
+/*Part-2*/
 div div{
     display: inline-block;
 }
 
 .bookss{
     display: inline-block;
+    margin-left: 38px;
 }
 #b11{
     width: 242px;
@@ -167,18 +166,18 @@ div div{
     text-transform: uppercase;
 }
 #SelfB{
+    font-size: 50px;
     text-align: center;
     text-transform: uppercase;
-    color: rgb(244,194,194);
-    font-size: 45px;
-    margin-top: 114px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #e83556;
+    padding-top: 100px;
 }
 .firstB{
     margin-left: 65px;
 }
-.paragrafi01{
-    text-align: center;
-}
+/*Part-3*/
 .link1{
     font-size: 20px;
     color: black;
@@ -203,18 +202,21 @@ div div{
 
 }
 #podcast{
+    font-size: 55px;
     text-align: center;
     text-transform: uppercase;
-    color: rgb(244,194,194);
-    font-size: 45px;
-    margin-top: 114px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: black;
+    padding-top: 100px;
 }
 .row{
     margin-right: 30px;
 }
 .TB{
-    margin-left: -89px;
+    margin-left: -10px;
 }
+/*Part-4*/
 .colorL, .colorL1, .colorL2{
     color: black;
     text-align: center;
@@ -236,7 +238,7 @@ border: black solid 2px;
 height: 100px;
 }
 .table2{
-    margin-left: 31px;
+    margin-left: 135px;
     margin-top: 48px;
 
 }
@@ -249,13 +251,21 @@ height: 100px;
 
 }
 #hr4{
-    width: 100%;
+    width: 315px;
 }
 .data01:hover{
     background-color: rgb(244,194,194);;
 }
 .head:hover{
     background-color: #E83556;
+}
+#Table02{
+    margin-left: -5px;
+}
+
+#div-tabela{
+    background:whitesmoke;
+    padding-bottom: 120px;
 }
 </style>
 </head>
@@ -273,15 +283,18 @@ height: 100px;
    </header>
 
    <!--Part 1-->
-   <div class="n">
-       <div class="ngjyra">
-       <div class="paragraph">
-           <h2>Favorite Resources</h2>
-           <hr>
-           <p>If you want to know my top recommendations for books, podcasts, and products to uplevel your mind, you'll find the answers here!<br>
+   <div class="divholder">
+       <div class="bookimage">
+           <img src="foto.1.jpg">
+       </div>
+       <div class="textoverlap">
+           <h2>Endless Resources</h2>
+           <p>
+               Scroll down to find the newest, most helpful books,<br> podcasts and inspirational videos from people<br> that have experienced it all.
            </p>
        </div>
-    </div>
+   </div>
+
        
    </div>
 
@@ -295,8 +308,6 @@ height: 100px;
            <p class="p2"><b>Introducing The Mind, Body, Soul
             Balance Guide</b></p>
            <img src="b1.png" id="b11" >
-          
-           
             <p class="p1">A self-care journal to help you create more time for what you love without burning yourself out</p>
              <p class="price">$22</p>
            <button class="BuyBtn"><a href="buy_now.html" target="_blank">Buy now</a></button>
@@ -304,8 +315,7 @@ height: 100px;
        <div class="secondB">
            <p class="p2"><b>The Ultimate Self-Care Toolkit</b></p>
         <img src="b2.png" id="b22">
-        
-        <p class="p1">A digital collection of the best self-care tips, tricks, and tools to nourish your mind, body, and soul</p>
+         <p class="p1">A digital collection of the best self-care tips, tricks, and tools to nourish your mind, body, and soul</p>
         <p class="price">$10</p>
         <button class="BuyBtn"><a href="buy_now.html" target="_blank">Buy now</a></button>
     </div>
@@ -380,7 +390,7 @@ height: 100px;
 </div>
 <!--Part 4-->
 <div>
-    <div>
+    <div id="Table02">
         <h2 id="part4">Self-Esteem Resources for Girls</h2>
         <hr id="hr4">
         <table class="table2">

@@ -18,13 +18,13 @@
             display: flex;
 
         }
-section .imgBx{
+section .imgForm{
     position: relative;
     width: 50%;
     height: 100%;
 
 }
-section .imgBx:before
+section .imgForm:before
 {
     content:'';
     position: absolute;
@@ -37,7 +37,7 @@ section .imgBx:before
 }
 
 
-section .imgBx img{
+section .imgForm img{
     position:absolute;
     top: 0;
     left: 0;
@@ -46,7 +46,7 @@ section .imgBx img{
     object-fit: cover;
 }
 
-section .contentBx{
+section .buy-now{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,12 +56,12 @@ section .contentBx{
     
 
 }
-section .contentBx .formBx
+section .buy-now .formF
 {
     width: 50%;
 
 }
-section .contentBx .formBx h2{
+section .buy-now .formF h2{
     columns: #607d8b;
     font-weight: 600;
     font-size: 1.5em;
@@ -72,11 +72,11 @@ section .contentBx .formBx h2{
     letter-spacing: 1px;
 
 }
-section .contentBx .formBx .inputBx{
+section .buy-now .formF .inputF{
     margin-bottom: 20px;
 
 }
-section .contentBx .formBx .inputBx span{
+section .buy-now .formF .inputF span{
     font-size: 16px;
     margin-bottom: 5px;
     display: inline-block;
@@ -86,7 +86,7 @@ section .contentBx .formBx .inputBx span{
     letter-spacing:1px;
 
 }
-section .contentBx .formBx .inputBx input{
+section .buy-now .formF .inputF input{
     width: 100%;padding: 10px 20px;
     outline: none;
     font-weight: 400;
@@ -98,7 +98,7 @@ section .contentBx .formBx .inputBx input{
     
 
 }
-section .contentBx .formBx .inputBx input[type="submit"]
+section .buy-now .formF .inputF input[type="submit"]
 {
     background: #E83556;
     color: #fff;
@@ -107,22 +107,22 @@ section .contentBx .formBx .inputBx input[type="submit"]
     font-weight: 500;
     cursor: pointer;
 }
-section .contentBx .formBx .inputBx input[type="submit"]::hover
+section .buy-now .formF .inputF input[type="submit"]::hover
 {
     background:#E83556 ;
 
 }
-section .contentBx .formBx .remember{
+section .buy-now .formF .remember{
     margin-bottom: 10px;
     color: #607d8b;
     font-weight: 400;
     font-size: 14px;
 
 }
-section .contentBx .formBx .inputBx p{
+section .buy-now .formF .inputF p{
     color: #607d8b;
 }
-section .contentBx .formBx .inputBx p a{
+section .buy-now .formF .inputF p a{
     color: #E83556;
 }
 #photoB{
@@ -137,30 +137,30 @@ section .contentBx .formBx .inputBx p a{
 <body>
    
     <section>
-        <div class="imgBx">
+        <div class="imgForm">
             <img src="form.jpg" id="photoB">
         </div>    
-        <div class="contentBx">
-            <div class="formBx">
+        <div class="buy-now">
+            <div class="formF">
                 <h2>Buy now</h2>
                 <form>
-                    <div class="inputBx">
+                    <div class="inputF">
                         <span>Username</span>
                         <input type="text" name="" required>
                     </div>
-                    <div class="inputBx">
+                    <div class="inputF">
                         <span>Email</span>
                         <input type="email" name="" required>
                     </div>
-                    <div class="inputBx">
+                    <div class="inputF">
                         <span>Password</span>
                         <input type="password" name="" required>
                     </div>
-                    <div class="inputBx">
+                    <div class="inputF">
                         <span>Phone number</span>
                         <input type="text" name="" required>
                     </div>
-                    <div class="inputBx">
+                    <div class="inputF">
                         <span>Sasia</span>
                         <input type="number" name=""required>
                     </div>
@@ -171,7 +171,7 @@ section .contentBx .formBx .inputBx p a{
                         <label><input type="radio" name="" id="card">Card</label>
 
                     </div>
-                    <div class="inputBx">
+                    <div class="inputF">
                         <input type="submit" value="GO" name="">
                     </div>
 
