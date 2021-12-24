@@ -103,10 +103,14 @@ header{
     margin: 0;
     opacity: 0;
   }
-  nav.fill ul li a:hover {
+nav.fill ul li a:hover{
     color: #fff;
     z-index: 1;
-  }
+}
+  
+nav.fill ul li a:active{
+    color: #e83556;
+}
   nav.fill ul li a:hover:after {
     z-index: -10;
     animation: fill 1.0s forwards;
@@ -144,7 +148,8 @@ header{
               width: 25%;
               padding: 10px 0px 5px 250px;
               font-size: 40px;
-          }
+}
+
 div img{
     padding-left: 170px;
 }
@@ -253,7 +258,8 @@ a#b1, a#b2, a#b3{
 }
 .flexkid-1 p{
     font-family: system-ui;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 48px;
+    word-wrap: normal;
     line-height: 28px;
 }
 .flexkid-2 img{
@@ -267,7 +273,7 @@ a#b1, a#b2, a#b3{
     border-radius:10px;
     padding: 7px 15px;
     color: white;
-    margin-top:15px ;
+    margin-top:30px ;
 }
 
 .flexkid-1 p button a{
@@ -279,6 +285,15 @@ a#b1, a#b2, a#b3{
     background-color:#9B2339;
     color: white;
     cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+figcaption{
+    text-align: right;
+    font-family: system-ui;
+    font-weight: lighter;
+    font-size: 15px;
 }
 
 #serviceh2{
@@ -287,8 +302,7 @@ a#b1, a#b2, a#b3{
     color: #E83556;
     font-family: sans-serif;
     font-weight: bolder;
-    padding-top: 100px;
-    margin-bottom:50px;
+    padding-top: 150px;
 }
 
 .services{
@@ -309,6 +323,8 @@ a#b1, a#b2, a#b3{
 
 .articles:hover{
     background-color: #9B2339;
+    transform: scale(1.1);
+    transition: transform 1s;
 }
 
 .articles h3{
@@ -378,6 +394,12 @@ a#b1, a#b2, a#b3{
 
 .member h4, .member p{
     text-align: center;
+    font-family: system-ui;
+    font-size: 14px;
+}
+
+.member h4 i{
+    font-size: 16px;
 }
 
 #introduction{
@@ -385,9 +407,10 @@ a#b1, a#b2, a#b3{
     font-size: 40px;
     text-transform: uppercase;
     font-family: sans-serif;
+    font-weight: bolder;
     padding-top: 80px;
-    margin-bottom: 15px;
     margin-top: 0px;
+    padding-bottom: 25px;
 }
 
 .info{
@@ -405,6 +428,7 @@ a#b1, a#b2, a#b3{
     background-image: url(faq.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-origin: border-box;
     height: 630px;
     background-size: cover;
 }
@@ -415,6 +439,7 @@ a#b1, a#b2, a#b3{
     font-size: 80px;
     font-family: -webkit-pictograph;
     text-transform: uppercase;
+    text-shadow: 1px 3px black;
     padding-top: 130px;
     padding: 160px 20px 30px 25px;
 }
@@ -605,7 +630,7 @@ img.logo2{
 }
 
 .imageabout{
-    padding-right: 400px;
+    padding-right: 330px;
     padding-top: 50px;
 }
 
@@ -637,7 +662,8 @@ div.header h2{
     text-align: center !important;
     font-size: 40px;
     text-transform: uppercase;
-    font-family: fonti1;
+    font-family: sans-serif;
+    font-weight: bolder;
     margin-bottom: 15px;
     padding-top: 30px;
     padding-bottom:0px !important;
@@ -655,7 +681,7 @@ div.header h3{
 .info_text_one{
     display: inline-block;
     text-align: end;
-    margin-left:190px;
+    margin-left:200px;
     width:25%;
 }
 
@@ -683,7 +709,7 @@ div.header h3{
     height: 197px;
     position: absolute;
     margin-top: -23px;
-    margin-left: 663px;
+    margin-left: 676px;
 }
 
 .about div{
@@ -693,6 +719,8 @@ div.header h3{
 .circle1 img{
     margin-left: 111px;
     border-radius: 50%;
+    outline-color: #e9ecef;
+    outline-style: double;
     width: 156px;
     height: 156px;
     border: 7px solid #e9ecef;
@@ -700,8 +728,10 @@ div.header h3{
 }
 
 .circle2 img{
-    margin-left: 577px;
+    margin-left: 592px;
     border-radius: 50%;
+    outline-color: #e9ecef;
+    outline-style: double;
     width: 156px;
     height: 156px;
     border: 7px solid #e9ecef;
@@ -711,6 +741,8 @@ div.header h3{
 .circle3 img{
     margin-left: 535px;
     border-radius: 50%;
+    outline-color: #e9ecef;
+    outline-style: double;
     width: 156px;
     height: 156px;
     border: 7px solid #e9ecef;
@@ -720,6 +752,8 @@ div.header h3{
 .circle4 img{
     margin-left: 535px;
     border-radius: 50%;
+    outline-color: #e9ecef;
+    outline-style: double;
     width: 156px;
     height: 156px;
     border: 7px solid #e9ecef;
@@ -730,6 +764,8 @@ div.header h3{
     margin-top: 174px;
     margin-left: 535px;
     border-radius: 50%;
+    outline-color: #e9ecef;
+    outline-style: double;
     width: 156px;
     height: 156px;
     border: 7px solid #e9ecef;
@@ -763,7 +799,7 @@ div.header h3{
 }
 
 .info_text_three{
-    margin-left: 193px;
+    margin-left: 207px;
     text-align: end;
 }
 
@@ -815,7 +851,7 @@ div.header h3{
 }
 
 .circle4 img{
-    margin-left: 578px;
+    margin-left: 590px;
     margin-top: 175px;
 }
 
@@ -833,47 +869,9 @@ h2.apart{
 }
 
 
-/*about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width:320px)
+{
+
 }
-*/
-
-
-
-/**@keyframes a{
-    0% {
-      width: 1px;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      margin: auto;
-      height: 1px;
-      z-index: -1;
-      background: #E83556;
-      border-radius: 100%;
-    }
-    100% {
-      background: #E83556;
-      height: 5000%;
-      width: 5000%;
-      z-index: -1;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      border-radius: 0;
-    }
-  }
-  **/
-
-
-
-/*Pjesa e Besartes*/
-/* Besarta*/
-
 
 
