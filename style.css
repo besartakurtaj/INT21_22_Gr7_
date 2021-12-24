@@ -1,3 +1,8 @@
+*{
+    font-family: Poppins;
+}
+
+
 header{
     padding: 0;
     margin: 0;
@@ -147,7 +152,7 @@ nav.fill ul li a:active{
           .hovermenu h1{
               width: 25%;
               padding: 10px 0px 5px 250px;
-              font-size: 40px;
+              font-size: 38px;
 }
 
 div img{
@@ -177,7 +182,7 @@ div .flex-child.second{
 }
 
 .flex-child.second p{
-    font-family: system-ui;
+    font-family: Poppins;
     padding: 15px 15px;
 }
 
@@ -190,7 +195,7 @@ div .flex-child.second{
     background-color: #E83556;
     color: white;
     margin: 10px;
-    font-family: system-ui;
+    font-family: Poppins;
 }
 
 #button1:hover{
@@ -261,6 +266,7 @@ a#b1, a#b2, a#b3{
     padding: 0px 0px 0px 48px;
     word-wrap: normal;
     line-height: 28px;
+    font-size: 14px;
 }
 .flexkid-2 img{
     width: 731px;
@@ -300,7 +306,7 @@ figcaption{
     font-size: 40px;
     text-align: center;
     color: #E83556;
-    font-family: sans-serif;
+    font-family: Poppins;
     font-weight: bolder;
     padding-top: 150px;
 }
@@ -331,7 +337,7 @@ figcaption{
     text-transform: uppercase;
     text-align: center;
     color: white;
-    font-family: sans-serif;
+    font-family: Poppins;
 }
 
 .articles button{
@@ -355,8 +361,14 @@ figcaption{
     cursor: pointer;
 }
 
+.firstimage, .secondimage{
+    height:209.19px;
+}
+
 .firstimage img, .secondimage img{
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: -8px;
 }
 
 .meetourteam{
@@ -406,7 +418,7 @@ figcaption{
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: Poppins;
     font-weight: bolder;
     padding-top: 80px;
     margin-top: 0px;
@@ -501,7 +513,7 @@ figcaption{
 }
 
 .subscribe form label{
-    font-family: sans-serif;
+    font-family: Poppins;
     font-weight: lighter;
     font-size: 16px;
 }
@@ -601,7 +613,7 @@ footer{
 
 .copyright p, .mail address, .follow h5{
     font-family: system-ui;
-    font-size: 14px;
+    font-size: 13px;
     color: #E83556;
 }
 img.logo1{
@@ -648,21 +660,21 @@ img.logo2{
 .text-overlap h2{
     color: #666666;
     font-size: 42px;
-    font-family: system-ui;
+    font-family: Poppins;
     padding:10px;
 }
 
 .text-overlap p{
     color: gray;
     text-align: left;
-    font-family: system-ui;
+    font-family: Poppins;
 }
 
 div.header h2{
     text-align: center !important;
     font-size: 40px;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: Poppins;
     font-weight: bolder;
     margin-bottom: 15px;
     padding-top: 30px;
@@ -687,7 +699,7 @@ div.header h3{
 
 .info_text_one h1{
     margin-bottom: 0px;
-    font-family: sans-serif;
+    font-family: Poppins;
     font-size: 1.8rem;
     font-weight: 790;
     padding: 0px;
@@ -700,7 +712,7 @@ div.header h3{
     display: inline-block;
     font-size: 1rem;
     color: #6c757d!important;
-    font-family: sans-serif;
+    font-family: Poppins;
     line-height: 1.60;
     padding-right: 277px;
 }
@@ -783,7 +795,7 @@ div.header h3{
 .info_text_two h1{
     text-align: left;
     margin-bottom: 0px;
-    font-family: sans-serif;
+    font-family: Poppins;
     font-size: 1.8rem;
     font-weight: 790;
     padding: 0px;
@@ -794,7 +806,7 @@ div.header h3{
     width: 337px;
     font-size: 1rem;
     color: #6c757d!important;
-    font-family: sans-serif;
+    font-family: Poppins;
     line-height: 1.60;
 }
 
@@ -806,7 +818,7 @@ div.header h3{
 .info_text_three h1{
     text-align: end;
     margin-bottom: 0px;
-    font-family: sans-serif;
+    font-family: Poppins;
     font-size: 1.8rem;
     font-weight: 790;
     padding: 0px;
@@ -817,7 +829,7 @@ div.header h3{
     width: 337px;
     font-size: 1rem;
     color: #6c757d!important;
-    font-family: sans-serif;
+    font-family: Poppins;
     line-height: 1.60;
 }
 
@@ -833,7 +845,7 @@ div.header h3{
 .info_text_four h1{
     text-align: left;
     margin-bottom: 0px;
-    font-family: sans-serif;
+    font-family: Poppins;
     font-size: 1.6rem;
     font-weight: 790;
     padding: 0px;
@@ -845,7 +857,7 @@ div.header h3{
     display: inline-block;
     font-size: 1rem;
     color: #6c757d!important;
-    font-family: sans-serif;
+    font-family: Poppins;
     line-height: 1.60;
     margin-bottom: 100px;
 }
@@ -868,10 +880,14 @@ h2.apart{
     margin-top: 50px;
 }
 
+@font-face {
+    font-family: Montserrat;
+    src: url(font/Montserrat-Regular.ttf);
+}
 
-@media screen and (min-width:320px)
-{
-
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins/Poppins-Regular.ttf);
 }
 
 
