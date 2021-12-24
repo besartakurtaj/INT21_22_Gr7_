@@ -8,6 +8,7 @@
   <title>self-help blog</title>
   <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+  <script src="javascript.js"></script> 
   <style>
     /* NAVIGATION */
     nav {
@@ -279,7 +280,7 @@
   <!--newsletter and map-->
   <div class="information">
     <div class="subscribe">
-      <form>
+      <form name="myForm" onsubmit="return validateForm()" method="post">
         <h4>Join our mailing list</h4>
         <label for="email">e-mail:<br></label>
         <input type="email" id="email" name="email">
