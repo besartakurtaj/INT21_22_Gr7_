@@ -131,6 +131,9 @@ section .buy-now .formF .inputF p a{
     width: 80%;
     height: 80%;
 }
+datalist{
+    display: none;
+}
 
 </style>
 </head>
@@ -145,8 +148,10 @@ section .buy-now .formF .inputF p a{
                 <h2>Buy now</h2>
                 <form>
                     <div class="inputF">
-                        <span>Username</span>
-                        <input type="text" name="" required>
+                        <keygen name="username" keytype="RSA"> Username
+                        <input type="text" name="username">
+                        <!--<span>Username</span>
+                        <input type="text" name="" required>-->
                     </div>
                     <div class="inputF">
                         <span>Email</span>
@@ -170,6 +175,25 @@ section .buy-now .formF .inputF p a{
                         <label><input type="radio" name="" id="cash">Cash</label>
                         <label><input type="radio" name="" id="card">Card</label>
 
+                    </div>
+                    <div class="inputF">
+                        <!--<label for="choose">How satisfied are you with our products?</label>        
+                        <datalist id="choose">
+                          <option value="Excellent">
+                          <option value="Very nice">
+                          <option value="Nice">
+                          <option value="Not enough">
+                        </datalist>-->
+                        <label for="rating">How satisfied are you with our products?</label>
+<input list="rating1" name="rating" id="rating">
+
+<datalist id="rating1">
+  <option value="Excellent">
+  <option value="Very nice">
+  <option value="Nice">
+  <option value="Not enough">
+  
+  </datalist>
                     </div>
                     <div class="inputF">
                         <input type="submit" value="GO" name="">
