@@ -139,6 +139,18 @@
      hr {
       width: 160px;
     }
+
+    #drag1{
+    width: 460px;
+    height: 135px;
+    /**border: 1px dotted black;**/
+    margin-bottom: 30px;
+}
+
+#div1, #div2, #div3{
+    display: inline-block;
+    margin-right: 25px;
+}
   </style>
 </head>
 
@@ -164,15 +176,15 @@
 </header>
 
   <!--pjesa 1-->
-  <div class="flex-container">
-    <div class="flex-child first">
-      <img src="homepage.png">
+  <div class="flex-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="flex-child first" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img draggable="true" id="selflove" ondragstart="drag(event)" src="homepage.png">
     </div>
     <div class="flex-child second">
-      <div>
-        <button id="button1"><a id="b1" href="books.html">BOOKS</a></button>
-        <button id="button2"><a id="b2" href="books.html">PODCASTS</a></button>
-        <button id="button3"><a id="b3" href="books.html">QUOTES</a></button>
+        <div id=drag1 ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1"><button id="button1" draggable="true" ondragstart="drag(event)"><a id="b1" href="books.html">BOOKS</a></button></div>
+        <div id="div2"><button id="button2" draggable="true" ondragstart="drag(event)"><a id="b2" href="books.html">PODCASTS</a></button></div>
+        <div id="div3"><button id="button3" draggable="true" ondragstart="drag(event)"><a id="b3" href="books.html">QUOTES</a></button></div>
 
         <p>
           Welcome to <mark style="background-color:#FAA0A0; padding: 2px;">self-love</mark> juice.<br>
@@ -180,8 +192,8 @@
           stressing about the future and<br> make things happen now. If you are interested in making your life<br> more
           blissful right now, we have some resources to help you so<br> please enjoy the ride.
         </p>
-      </div>
-    </div>
+    </div> 
+    
   </div>
 
   <!--pjesa 2-->
