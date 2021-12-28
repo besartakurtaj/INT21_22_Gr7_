@@ -5,3 +5,11 @@ function validateForm() {
       return false;
     }
 }
+
+function submitted(){
+  alert("Thank you. Your form has been successfully submitted,");
+}
+
+$("#submitform").click(function() {
+  alert("Thank you. Your form has been successfully submitted.");
+});
