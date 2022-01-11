@@ -61,7 +61,8 @@ section .buy-now .formF
     width: 50%;
 
 }
-section .buy-now .formF h2{
+/*section .buy-now .formF*/ 
+#title{
     columns: #607d8b;
     font-weight: 600;
     font-size: 1.5em;
@@ -130,22 +131,29 @@ section .buy-now .formF .inputF p a{
     margin-top: 70px;
     width: 80%;
     height: 80%;
+    background: linear-gradient(135deg, var(--priamary), var(--secondary));
+     opacity: .9;
+    position: absolute;
 }
-datalist{
-    display: none;
+:root{
+    --primary: hsla(348, 97%,63%,0.65);
+    --secondary: hsla(230,96%,62%,0.65);
 }
 
 </style>
 </head>
 <body>
-   
+    <script>
+        window.alert("Welcome!");
+      </script>
+      
     <section>
         <div class="imgForm">
             <img src="form.jpg" id="photoB">
         </div>    
         <div class="buy-now">
             <div class="formF">
-                <h2>Buy now</h2>
+                <h2 id="title">Buy now</h2>
                 <form>
                     <div class="inputF">
                         <keygen name="username" keytype="RSA"> Username
@@ -155,45 +163,37 @@ datalist{
                     </div>
                     <div class="inputF">
                         <span>Email</span>
-                        <input type="email" name="" required>
+                        <input type="email" name="" required autocomplete="on">
                     </div>
                     <div class="inputF">
                         <span>Password</span>
-                        <input type="password" name="" required>
+                        <input type="password" name="" required autocomplete="on" >
                     </div>
                     <div class="inputF">
                         <span>Phone number</span>
-                        <input type="text" name="" required>
+                        <input type="text" name="" required autocomplete="on" pattern="[0-9]{9}">
                     </div>
                     <div class="inputF">
                         <span>Sasia</span>
-                        <input type="number" name=""required>
+                        <input type="number" name=""required autocomplete="on">
                     </div>
                     
                     <div class="remember">
                         <span>Payment:</span>
-                        <label><input type="radio" name="" id="cash">Cash</label>
-                        <label><input type="radio" name="" id="card">Card</label>
+                        <label><input type="radio" name="" id="cash" >Cash</label>
+                        <label><input type="radio" name="" id="card" >Card</label>
 
                     </div>
                     <div class="inputF">
-                        <!--<label for="choose">How satisfied are you with our products?</label>        
-                        <datalist id="choose">
-                          <option value="Excellent">
-                          <option value="Very nice">
-                          <option value="Nice">
-                          <option value="Not enough">
-                        </datalist>-->
                         <label for="rating">How satisfied are you with our products?</label>
-<input list="rating1" name="rating" id="rating">
-
-<datalist id="rating1">
-  <option value="Excellent">
-  <option value="Very nice">
-  <option value="Nice">
-  <option value="Not enough">
-  
-  </datalist>
+                        <input list="rating1" name="rating" id="rating">
+                        <datalist id="rating1">
+                        <option value="Excellent">
+                        <option value="Very nice">
+                        <option value="Nice">
+                        <option value="Not enough">
+                            
+                        </datalist>
                     </div>
                     <div class="inputF">
                         <input type="submit" value="GO" name="">
