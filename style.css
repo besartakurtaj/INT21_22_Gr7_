@@ -406,8 +406,8 @@ figcaption{
 
 .member h4, .member p{
     text-align: center;
+    font-family: system-ui;
     font-size: 14px;
-    font-style: italic;
 }
 
 .member h4 i{
@@ -437,7 +437,7 @@ figcaption{
 }
 
 .faq{
-    background-image: url(images/faq.jpg);
+    background-image: url(faq.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-origin: border-box;
