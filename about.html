@@ -7,6 +7,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <title>About</title>
+    <style>
+        #aboutOurTeam{
+            text-align: center !important;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-weight: bolder;
+    margin-bottom: -87px;
+    padding-top: 30px;
+    padding-bottom: 0px !important;
+        }
+        #bioGraphyy{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .biography{
+            position: relative;
+            width: 1100px;
+            display: flex;
+            flex-wrap: wrap;
+            transform-style: preserve-3d;
+            perspective: 500px;
+        }
+        .biography .box{
+            position: relative;
+            width: 275px;
+            height: 275px;
+            background:#000;
+            transition: 0.5s;
+            transform-style: preserve-3d;
+            overflow: hidden;
+        }
+        .biography:hover .box{
+            transform: rotateY(25deg);
+        }
+        .biography .box:hover ~ .box{
+            transform: rotateY(~25deg);
+        }
+        .biography .box:hover{
+            transform: rotateY(0deg) scale(1.25);
+            z-index: 1;
+            box-shadow:0 25px 40px rgba(0,0,0,0.5) ;
+        }
+        .biography .box .imgBx{
+            position: absolute;
+            top: 0;
+            right: 170px;
+            width: 100%;
+            height: 100%;
+        }
+        .biography .box .imgBx::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 171px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #F8C8DC,#FAA0A0);
+            z-index: 1;
+            opacity: 0;
+            transition: 0.5s;
+            mix-blend-mode: multiply;
+        }
+        .biography .box:hover .imgBx::before{
+            opacity:1;
+        }
+        .biography .box .imgBx img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .biography .box .content
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            padding: 20px;
+            align-items: flex-end;
+            box-sizing: border-box;
+        }
+        .biography .box .content h2{
+            color: #fff;
+            transition: 0.5s;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-size: 20px;
+            transform: translateY(200px);
+        }
+        .biography .box:hover .content h2{
+            transform: translateY(0px);
+            transition-delay:0.6s ;
+        }
+        .biography .box .content p{
+            color: #fff;
+            transition: 0.5s;
+            font-size: 14px;
+            transform: translateY(200px);
+        }
+        .biography .box:hover .content p{
+            transform: translateY(0px);
+            transition-delay:0.7s ;
+        }
+        #aboutHr{
+        width: 40%;
+        margin-top: 50px;
+        }
+    </style>
 </head>
 
 <body style="padding: 0px; margin:0px;">
@@ -113,7 +229,66 @@
             </div>
         </div>
     </section>
+    <hr id="aboutHr" 1px solid black>
+ <h2 id="aboutOurTeam">About our team</h2>
 
+<div id="bioGraphyy">
+   
+    <div class="biography">
+        <div class="box">
+            <div class="imgBx">
+                <img src="images/member1.jpg" width="100%%" height="100%">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Jane Doe</h2>
+                    <p>Professional Business Developer with more than four years of experience i the business development processes. Involved in product testing,
+                        managment, and development of new business opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img src="images/member2.jpg" width="100%" height="100%">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Jane Doe</h2>
+                    <p>Professional Business Developer with more than four years of experience i the business development processes. Involved in product testing,
+                        managment, and development of new business opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img src="images/member3.jpg" width="100%" height="100%">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Jane Doe</h2>
+                    <p>Professional Business Developer with more than four years of experience i the business development processes. Involved in product testing,
+                        managment, and development of new business opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img src="images/member4.jpg" width="100%" height="100%">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Jane Doe</h2>
+                    <p>Professional Business Developer with more than four years of experience i the business development processes. Involved in product testing,
+                        managment, and development of new business opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <!--footer-->
     <footer style="background-color: whitesmoke;">
         <div class="call">

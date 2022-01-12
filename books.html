@@ -8,6 +8,7 @@
     <title>Resources</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <style>
         body {
             margin: 0px;
@@ -287,7 +288,6 @@
         #SelfB {
             font-size: 50px;
             text-align: center;
-            text-transform: uppercase;
             font-family: sans-serif;
             font-weight: bolder;
             color: #e83556;
@@ -587,6 +587,7 @@ a{
     font-family: system-ui;
     padding: 10px;
     font-weight: unset;
+
 }
 
 .textoverlap p{
@@ -666,7 +667,8 @@ div div{
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: bolder;
-    color: #e83556;
+    /*
+    color: #e83556;*/
     padding-top: 100px;
 }
 .firstB{
@@ -790,6 +792,13 @@ height: 100px;
     color: black;
     padding-top: 100px;
 }
+/*
+<script>
+$(document).ready(function(){
+  $("#SelfB").css("color", "#e83556;");
+});
+</script>
+*/
 </style>
 </head>
 
@@ -818,7 +827,7 @@ height: 100px;
             <img src="foto.1.jpg">
         </div>
         <div class="textoverlap">
-            <h2>Endless Resources</h2>
+            <h2 >Endless Resources</h2>
             <p>
                 Scroll down to find the newest, most helpful books,<br> podcasts and inspirational videos from
                 people<br> that have experienced it all.
@@ -826,6 +835,7 @@ height: 100px;
         </div>
     </div>
     </div>
+   
 
 
     <script>
@@ -881,6 +891,11 @@ height: 100px;
             <button class="BuyBtn" onclick="myFunction()"><a href="buy_now.html" target="_blank">Buy now</a></button>
         </div>
     </div>
+    <script>
+        $( "#SelfB" ).css( "text-transform", "uppercase;" );
+        </script>
+
+
 
     <br><br><br>
 
@@ -1019,14 +1034,21 @@ height: 100px;
         <audio width="40%" controls>
             <source src="audio files/The Secret of Becoming Mentally Strong _ Amy Morin _ TEDxOcala.mp3.crdownload">
         </audio>
-        <h4>The secret of becoming mentally strong</h4>
+        <h4 class="h4jq">The secret of becoming mentally strong</h4>
+        <script>
+            $(document).ready(function(){
+              $(".h4jq").mouseup(function(){
+                alert("Mouse up over Podcast");
+              });
+            });
+            </script>
 
         </div>
         <div id="audio2">
             <audio width="30%" controls>
                 <source src="audio files/The skill of self confidence _ Dr. Ivan Joseph _ TEDxRyersonU.mp3">
             </audio>
-            <h4>The skill of self confidence</h4>
+            <h4 class="h4jq">The skill of self confidence</h4>
 
         </div>
 
