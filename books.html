@@ -8,6 +8,7 @@
     <title>Resources</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <style>
         body {
             margin: 0px;
@@ -442,13 +443,97 @@
         }
 
         .onlineform{
+            padding: 10px 30px;}
+            .onlineform{
+            display: flex;
+            justify-content: center;
+        }
+
+        .onlineform nav{
+            display: inline-block;
+        }
+
+        .onlineform nav form{
+            width: 600px;
+            background-color: whitesmoke;
+            padding: 48px 50px;
+            margin-left: 25px;
+        }
+
+        .inputinfo{
             padding: 10px 30px;
+        }
+
+        .inputinfo input{
+            background-color: whitesmoke;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid darkslategray;
+        }
+
+        .inputinfo input, .inputinfo label{
+            font-size:18px;
+        }
+
+        #f_name{
+            margin-right: 60px;
+            width: 170px;
+        }
+
+        #f_lastname{
+            margin-right:23px;
+            width: 170px;
+        }
+
+        #f_mail{
+            margin-right: 64px;
+            width: 170px;
+        }
+
+        input#f_comment{
+            width: 300px;
+            width: 300px;
+            border: 1px solid black;
+            padding: 50px;
+        }
+        .inputinfo button{
+            background-color: white;
+            border: none;
+            border-radius: none;
+            padding: 11px 25px;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        .inputinfo button:hover{
+            transform: scale(1.1);
+            transition: transform 1s;
+            background-color: #FAA0A0;
+            color: white;
+            cursor: pointer;
+        }
+
+        .onlineform nav img{
+            width: 700px;
+            height: 603px;
+            padding-left: 135px;
+        }
+
+        .onlineformheading{
+            font-size: 55px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-weight: bolder;
+            color: black;
+            padding-top: 100px;
+        }
 
 </style>
 </head>
 
 <body>
-
     <header style="background: white; color: rgba(255, 255, 255, 0.5);">
         <div class="hovermenu">
             <h1>
@@ -673,18 +758,26 @@
         <audio width="40%" controls>
             <source src="audio files/The Secret of Becoming Mentally Strong _ Amy Morin _ TEDxOcala.mp3.crdownload">
         </audio>
-        <h4>The secret of becoming mentally strong</h4>
+        <h4 class="h4jq">The secret of becoming mentally strong</h4>
 
         </div>
         <div id="audio2">
             <audio width="30%" controls>
                 <source src="audio files/The skill of self confidence _ Dr. Ivan Joseph _ TEDxRyersonU.mp3">
             </audio>
-            <h4>The skill of self confidence</h4>
+            <h4 class="h4jq">The skill of self confidence</h4>
+            
 
         </div>
-
+            <script>
+            $(document).ready(function(){
+              $(".h4jq").mouseup(function(){
+                alert("Mouse up over Podcast");
+              });
+            });
+            </script>
     </nav>
+
 </section>
 
     <h2 class="onlineformheading">ONLINE MEETINGS</h2>
