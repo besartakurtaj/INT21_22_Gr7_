@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="morestyle.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <title>MORE</title>
   <style>
     nav {
@@ -85,7 +87,7 @@
       z-index: 1;
     }
 
-    nav.fill ul li:active{
+    nav.fill ul li:active {
       background-color: #fff;
     }
 
@@ -124,8 +126,21 @@
     .hovermenu h1 {
       width: 25%;
       padding: 10px 0px 5px 250px;
-      font-size: 38px;
-      font-family: Montserrat;
+      font-size: 36px;
+      font-family: 'Poppins';
+    }
+
+    nav.fill ul {
+      padding: 0px;
+      position: absolute;
+      top: 30px;
+      left: 555px;
+    }
+
+    .hovermenu h1{
+      width: 100%;
+      position: absolute;
+      left:10px;
     }
   </style>
 </head>
@@ -134,20 +149,99 @@
   <!---NAVIGATION-->
   <header style="background: white; color: rgba(255, 255, 255, 0.5);">
     <div class="hovermenu">
-        <h1>
-          self-help blog
-        </h1>
-          <nav class="fill">
-            <ul>
-              <li><a href="projekti.html" target="_self">Home</a></li>
-              <li><a href="about.html" target="_self">About</a></li>
-              <li><a href="blog.html" target="_self">Blog</a></li>
-              <li><a href="books.html" target="_self">Resources</a></li>
-              <li><a href="more.html" target="_self">More</a></li>
-            </ul>
-          </nav>
+      <h1>
+        self-help blog
+      </h1>
+      <nav class="fill">
+        <ul>
+          <li><a href="projekti.html" target="_self">Home</a></li>
+          <li><a href="about.html" target="_self">About</a></li>
+          <li><a href="blog.html" target="_self">Blog</a></li>
+          <li><a href="books.html" target="_self">Resources</a></li>
+          <li><a href="more.html" target="_self">More</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
+
+  <section class="wrapper">
+    <div class="image__wrapper">
+        <div class="image__wrapper_inner">
+
+        </div>
+        <img class="box" src="images/illustration-box-desktop.svg" alt="box">
+    </div>
+    <div class="accordion__wrapper">
+        <h1 class="title__accordion">FAQ</h1>
+        <div class="questions__accordions">
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        How many team members can I invite?
+                    </h3>
+                    <img src="images/icon-arrow-down.svg">
+                </div>
+                <div class="answer">
+                    You can invite up to 2 additional users on the Free plan. There is no limit on
+                    team members for the Premium plan.
+                </div>
+            </div>
+
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        What is the maximum file upload size?
+                    </h3>
+                    <img src="images/icon-arrow-down.svg">
+                </div>
+                <div class="answer ">
+                    No more than 2GB. All files in your account must fit your allotted storage space.
+                </div>
+            </div>
+
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        How do I reset my password?
+                    </h3>
+                    <img src="images/icon-arrow-down.svg">
+                </div>
+                <div class="answer ">
+                    Click “Forgot password” from the login page or “Change password” from your profile page.
+                    A reset link will be emailed to you.
+                </div>
+            </div>
+
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        Can I cancel my subscription?
+                    </h3>
+                    <img src="images/icon-arrow-down.svg">
+                </div>
+                <div class="answer ">
+                    Yes! Send us a message and we’ll process your request no questions asked.
+                </div>
+            </div>
+
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        Do you provide additional support?
+                    </h3>
+                    <img src="images/icon-arrow-down.svg">
+                </div>
+                <div class="answer ">
+                    Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
 
   <!--FOOTER-->
   <footer style="background-color: whitesmoke;">
