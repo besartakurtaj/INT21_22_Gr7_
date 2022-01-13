@@ -1,89 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MORE</title>
-    <style>
-        h1{
-            padding:0px 20px 10px 280px;
-            font-size: 42px;
-            color: #FAA0A0;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MORE</title>
+  <style>
+    nav {
+      width: 80%;
+      margin: 0 auto;
+      background: #fff;
+    }
 
-        h1, ul, li{
-            display: inline-block;
-        }
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
 
-        a.nav{
-            padding: 5px 13px;
-            font-family: monospace;
-            font-size: 16px;
-            color: #8B8B8B;
-            font-weight: bolder;
-            text-decoration: none;
-        }
-        </style>
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px;
+      font-family: monospace;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-weight: bolder;
+      text-decoration: none;
+      color: #aaa;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0px 4px;
+    }
+
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+      transition: all .5s;
+    }
+
+    nav ul li a:hover {
+      color: #555;
+    }
+
+    nav.stroke ul li a,
+    nav.fill ul li a {
+      position: relative;
+    }
+
+    nav.stroke ul li a:after,
+    nav.fill ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '';
+      color: transparent;
+      background: #e83556;
+      height: 1px;
+    }
+
+    nav.stroke ul li a:hover:after {
+      width: 100%;
+    }
+
+    nav.fill ul li a {
+      transition: all 5s;
+    }
+
+    nav.fill ul li a:after {
+      text-align: left;
+      content: '';
+      margin: 0;
+      opacity: 0;
+    }
+
+    nav.fill ul li a:hover {
+      color: #555;
+      z-index: 1;
+    }
+
+    nav.fill ul li:active{
+      background-color: #fff;
+    }
+
+    nav.fill ul li a:hover:after {
+      z-index: -10;
+      animation: fill 1.5s forwards;
+      -webkit-animation: fill 1.5s forwards;
+      -moz-animation: fill 1.5s forwards;
+      opacity: 1;
+    }
+
+    /* Keyframes */
+    @keyframes fill {
+      0% {
+        width: 0%;
+        height: 2px;
+      }
+
+      100% {
+        width: 100%;
+        height: 2px;
+        color: #e83556;
+      }
+    }
+
+    h1 {
+      padding: 0px 20px 10px 280px;
+      font-size: 42px;
+      color: #FAA0A0;
+    }
+
+    .hovermenu {
+      display: flex;
+    }
+
+    .hovermenu h1 {
+      width: 25%;
+      padding: 10px 0px 5px 250px;
+      font-size: 38px;
+      font-family: Montserrat;
+    }
+  </style>
 </head>
+
 <body>
-    <header class="navbar">
-        <h1>self-help blog</h1>
-        <ul>
-            <li><a class="nav" href="projekti.html" target="_self">HOME</a></li>
-            <li><a class="nav" href="about.html" target="_self">ABOUT</a></li>
-            <li><a class="nav" href="#">BLOG</a></li>
-            <li><a class="nav" href="books.html" target="_self">RESOURCES</a></li>
-            <li><a class="nav" href="more.html" target="_self">MORE</a></li>
-        </ul>
-    </header>
-   
-    <head>
-        <title>Contact Us</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-        <link rel="stylesheet" type="text/css"href="morestyle.css">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <div class="contact-box">
-                <div class="left"></div>
-                <div class="right">
-                    <h2>Contact Us</h2>
-                    <input type="text" class="field" placeholder="Your Name">
-                    <input type="text" class="field" placeholder="Your Email">
-                    <input type="text" class="field" placeholder="Your Phone">
-                    <textarea class="field area" placeholder="Message"></textarea>
-                    <button class="btn">SEND</button>
-                </div>
-            </div>
-        </div>
-    </body>
+  <!---NAVIGATION-->
+  <header style="background: white; color: rgba(255, 255, 255, 0.5);">
+    <div class="hovermenu">
+        <h1>
+          self-help blog
+        </h1>
+          <nav class="fill">
+            <ul>
+              <li><a href="projekti.html" target="_self">Home</a></li>
+              <li><a href="about.html" target="_self">About</a></li>
+              <li><a href="blog.html" target="_self">Blog</a></li>
+              <li><a href="books.html" target="_self">Resources</a></li>
+              <li><a href="more.html" target="_self">More</a></li>
+            </ul>
+          </nav>
+    </div>
+  </header>
 
-    <!-- --- Call To Action -------->
-
-    <section class="cta">
-        <h1>Enroll For Our Online Meetings<br>Anywhere From The World</h1>
-       
-        <div class=center>
-            <button id="contact_us"><a href="#">CONTACT US</a></button>
-        </div>
-        </div>            
-        </section>
-
-
-        <!-- --- Footer -------->
-
-        <section class="footer">
-            <h3>About Us</h3>
-            <p>We are here to help you organize your thoughts,<br> relax your mind, and
-                overcome your doubts so you can stop stressing about the future and
-                make things happen now.
-            </p>
-      
-        </section>
-
-         <!--FOOTER-->
+  <!--FOOTER-->
   <footer style="background-color: whitesmoke;">
     <div class="call">
       <img src="call.png">
@@ -113,5 +179,6 @@
   </footer>
 
 
-    </body>
+</body>
+
 </html>

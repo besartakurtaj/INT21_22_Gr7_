@@ -63,9 +63,9 @@
       right: 0;
       margin: auto;
       width: 0%;
-      content: '.';
+      content: '';
       color: transparent;
-      background: #aaa;
+      background: #e83556;
       height: 1px;
     }
 
@@ -79,18 +79,18 @@
 
     nav.fill ul li a:after {
       text-align: left;
-      content: '.';
+      content: '';
       margin: 0;
       opacity: 0;
     }
 
     nav.fill ul li a:hover {
-      color: #fff;
+      color: #555;
       z-index: 1;
     }
 
     nav.fill ul li:active{
-      background-color: #e83556;
+      background-color: #fff;
     }
 
     nav.fill ul li a:hover:after {
@@ -108,15 +108,10 @@
         height: 2px;
       }
 
-      50% {
-        width: 100%;
-        height: 2px;
-      }
-
       100% {
         width: 100%;
-        height: 100%;
-        background: #e83556;
+        height: 2px;
+        color: #e83556;
       }
     }
 
