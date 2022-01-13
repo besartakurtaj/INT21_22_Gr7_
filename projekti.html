@@ -9,6 +9,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
   <script src="javascript.js"></script> 
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <style>
     /* NAVIGATION */
     nav {
@@ -336,9 +337,20 @@
       </h5>
     </div>
     <div class="copyright">
-      <p>&copy;Proudly created by: <br>
-        Bleona Jashari, Besarta Kurtaj, Blinera Kadriu</p>
+      <p id="jqP" class="showw">&copy;Proudly created by:</p>
+       <p id="hide" class="show"> Bleona Jashari, Besarta Kurtaj, Blinera Kadriu</p>
     </div>
+    
+      <script>
+      $(document).ready(function(){
+  $("#jqP").click(function(){
+    $("#hide").hide("slow", function(){
+      alert("The creators are now hidden");
+    });
+  });
+});
+</script>
+      
   </footer>
 
 </body>
