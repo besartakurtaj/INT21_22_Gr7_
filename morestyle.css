@@ -29,11 +29,16 @@
   html {
     font-size: var(--fontSize);
   }
+
+  body{
+      display:block;
+      margin:0;
+  }
   
-  body {
+  .body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-content: center;
   }
