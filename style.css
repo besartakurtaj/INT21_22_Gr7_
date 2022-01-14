@@ -71,16 +71,18 @@ header{
   nav ul li a,
   nav ul li a:after,
   nav ul li a:before {
-    transition: all .2s;
+    transition: all .5s;
   }
+
   nav ul li a:hover {
     color: #555;
   }
-  
+
   nav.stroke ul li a,
   nav.fill ul li a {
     position: relative;
   }
+
   nav.stroke ul li a:after,
   nav.fill ul li a:after {
     position: absolute;
@@ -89,54 +91,55 @@ header{
     right: 0;
     margin: auto;
     width: 0%;
-    content: '.';
+    content: '';
     color: transparent;
-    background: #aaa;
+    background: #e83556;
     height: 1px;
   }
+
   nav.stroke ul li a:hover:after {
     width: 100%;
   }
-  
+
   nav.fill ul li a {
-    transition: all 1s;
+    transition: all 5s;
   }
-  
+
   nav.fill ul li a:after {
     text-align: left;
-    content: '.';
+    content: '';
     margin: 0;
     opacity: 0;
   }
-nav.fill ul li a:hover{
-    color: #fff;
+
+  nav.fill ul li a:hover {
+    color: #555;
     z-index: 1;
-}
-  
-nav.fill ul li a:active{
-    color: #e83556;
-}
+  }
+
+  nav.fill ul li:active{
+    background-color: #fff;
+  }
+
   nav.fill ul li a:hover:after {
     z-index: -10;
-    animation: fill 1.0s forwards;
-    -webkit-animation: fill 1.0s forwards;
-    -moz-animation: fill 1.0s forwards;
+    animation: fill 1.5s forwards;
+    -webkit-animation: fill 1.5s forwards;
+    -moz-animation: fill 1.5s forwards;
     opacity: 1;
   }
+
   /* Keyframes */
   @keyframes fill {
     0% {
       width: 0%;
-      height: 1px;
+      height: 2px;
     }
-    50% {
-      width: 100%;
-      height: 1px;
-    }
+
     100% {
       width: 100%;
-      height: 100%;
-      background: #e83556;
+      height: 2px;
+      color: #e83556;
     }
   }
           h1{

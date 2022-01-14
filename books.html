@@ -66,9 +66,9 @@
       right: 0;
       margin: auto;
       width: 0%;
-      content: '.';
+      content: '';
       color: transparent;
-      background: #aaa;
+      background: #e83556;
       height: 1px;
     }
 
@@ -82,18 +82,18 @@
 
     nav.fill ul li a:after {
       text-align: left;
-      content: '.';
+      content: '';
       margin: 0;
       opacity: 0;
     }
 
     nav.fill ul li a:hover {
-      color: #fff;
+      color: #555;
       z-index: 1;
     }
 
     nav.fill ul li:active{
-      background-color: #e83556;
+      background-color: #fff;
     }
 
     nav.fill ul li a:hover:after {
@@ -111,15 +111,10 @@
         height: 2px;
       }
 
-      50% {
-        width: 100%;
-        height: 2px;
-      }
-
       100% {
         width: 100%;
-        height: 100%;
-        background: #e83556;
+        height: 2px;
+        color: #e83556;
       }
     }
 
@@ -554,6 +549,12 @@
                   <li><a href="blog.html" target="_self">Blog</a></li>
                   <li><a href="books.html" target="_self">Resources</a></li>
                   <li><a href="more.html" target="_self">More</a></li>
+                  <a href="slidingform.html" target="_self" style="text-decoration: none;"><span style="
+                    margin-left: 200px;
+                    font-size:17px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #FAA0A0;">Log In</span></a>
                 </ul>
               </nav>
         </div>
@@ -788,44 +789,7 @@
 
 </section>
 
-    <h2 class="onlineformheading">ONLINE MEETINGS</h2>
-    <hr>
-    <article class="onlineform">
-        <nav>
-            <img src="p2.jpg">
-
-        </nav>
-        <nav>
-            <form name="onlineform" onsubmit="show_alert();" method="post">
-                <div class="inputinfo">
-                    <label for="name" id="f_name">Name: </label>
-                    <input type="text" id="f_name"><br>
-                </div>
-                <div class="inputinfo">
-                    <label for="last name" id="f_lastname"> Last Name:</label>
-                    <input type="text" id="f_lastname"><br>
-                </div>
-                <div class="inputinfo">
-                    <label for="email" id="f_mail">Email: </label>
-                    <input type="text" id="f_mail"><br>
-                </div>
-                <div class="inputinfo">
-                    <label for="schedule" id="f_schedule">Meeting schedules: </label><br><br>
-                    <input type="radio" id="f_schedule">Monday
-                    <input type="radio" id="f_schedule"> Wednesday
-                    <input type="radio" id="f_schedule"> Friday <br>
-                </div>
-                <div class="inputinfo">
-                    <label for="comments" id="f_comment">Anything you would like to add: </label><br><br>
-                    <input type="text" id="f_comment">
-                </div>
-                <div class="inputinfo">
-                    <button onclick="submitted()" type="submit">Submit</button>
-                </div>
-            </form>
-        </nav>
-
-    </article>
+   
 
     
 
