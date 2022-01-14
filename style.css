@@ -507,6 +507,7 @@ figcaption{
     padding-right: 90px;
     margin-left:70px;
     margin-top:100px;
+    box-shadow: 5px 5px 15px darkgray;
 }
 
 .subscribe form h4{
