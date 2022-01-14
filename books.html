@@ -13,172 +13,165 @@
         body {
             margin: 0px;
         }
-
+        /*navbar*/
+        
         nav {
-      width: 80%;
-      margin: 0 auto;
-      background: #fff;
-    }
-
-    nav ul {
-      list-style: none;
-      text-align: center;
-    }
-
-    nav ul li {
-      display: inline-block;
-    }
-
-    nav ul li a {
-      display: block;
-      padding: 15px;
-      font-family: monospace;
-      text-transform: uppercase;
-      font-size: 23px;
-      font-weight: bolder;
-      text-decoration: none;
-      color: #aaa;
-      font-weight: 800;
-      text-transform: uppercase;
-      margin: 0px 4px;
-    }
-
-    nav ul li a,
-    nav ul li a:after,
-    nav ul li a:before {
-      transition: all .5s;
-    }
-
-    nav ul li a:hover {
-      color: #555;
-    }
-
-    nav.stroke ul li a,
-    nav.fill ul li a {
-      position: relative;
-    }
-
-    nav.stroke ul li a:after,
-    nav.fill ul li a:after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 0%;
-      content: '';
-      color: transparent;
-      background: #e83556;
-      height: 1px;
-    }
-
-    nav.stroke ul li a:hover:after {
-      width: 100%;
-    }
-
-    nav.fill ul li a {
-      transition: all 5s;
-    }
-
-    nav.fill ul li a:after {
-      text-align: left;
-      content: '';
-      margin: 0;
-      opacity: 0;
-    }
-
-    nav.fill ul li a:hover {
-      color: #555;
-      z-index: 1;
-    }
-
-    nav.fill ul li:active{
-      background-color: #fff;
-    }
-
-    nav.fill ul li a:hover:after {
-      z-index: -10;
-      animation: fill 1.5s forwards;
-      -webkit-animation: fill 1.5s forwards;
-      -moz-animation: fill 1.5s forwards;
-      opacity: 1;
-    }
-
-    /* Keyframes */
-    @keyframes fill {
-      0% {
-        width: 0%;
-        height: 2px;
-      }
-
-      100% {
-        width: 100%;
-        height: 2px;
-        color: #e83556;
-      }
-    }
-
-    h1 {
-      padding: 0px 20px 10px 280px;
-      font-size: 42px;
-      color: #FAA0A0;
-    }
-
-    .hovermenu {
-      display: flex;
-    }
-
-    .hovermenu h1 {
-      width: 25%;
-      padding: 10px 0px 5px 250px;
-      font-size: 38px;
-    }
-
-
+            width: 80%;
+            margin: 0 auto;
+            background: #fff;
+        }
+        
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline-block;
+        }
+        
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            font-family: monospace;
+            text-transform: uppercase;
+            font-size: 23px;
+            font-weight: bolder;
+            text-decoration: none;
+            color: #aaa;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0px 4px;
+        }
+        
+        nav ul li a,
+        nav ul li a:after,
+        nav ul li a:before {
+            transition: all .5s;
+        }
+        
+        nav ul li a:hover {
+            color: #555;
+        }
+        
+        nav.stroke ul li a,
+        nav.fill ul li a {
+            position: relative;
+        }
+        
+        nav.stroke ul li a:after,
+        nav.fill ul li a:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 0%;
+            content: '';
+            color: transparent;
+            background: #e83556;
+            height: 1px;
+        }
+        
+        nav.stroke ul li a:hover:after {
+            width: 100%;
+        }
+        
+        nav.fill ul li a {
+            transition: all 5s;
+        }
+        
+        nav.fill ul li a:after {
+            text-align: left;
+            margin: 0;
+        }
+        
+        nav.fill ul li a:hover {
+            color: #555;
+            z-index: 1;
+        }
+        
+        nav.fill ul li:active {
+            background-color: #fff;
+        }
+        
+        nav.fill ul li a:hover:after {
+            z-index: -10;
+            animation: fill 1.5s forwards;
+            -webkit-animation: fill 1.5s forwards;
+            -moz-animation: fill 1.5s forwards;
+            opacity: 1;
+        }
+        /* Keyframes */
+        
+        @keyframes fill {
+            0% {
+                width: 0%;
+                height: 2px;
+            }
+            100% {
+                width: 100%;
+                height: 2px;
+                color: #e83556;
+            }
+        }
+        
+        h1 {
+            padding: 0px 20px 10px 280px;
+            font-size: 42px;
+            color: #FAA0A0;
+        }
+        
+        .hovermenu {
+            display: flex;
+        }
+        
+        .hovermenu h1 {
+            width: 25%;
+            padding: 10px 0px 5px 250px;
+            font-size: 38px;
+        }
+        
         p {
             text-align: right;
-
             margin-right: 80px;
         }
-
+        
         #f button {
-
             background-color: #e83556;
             border-color: transparent;
             border-radius: 10px;
             padding: 7px 15px;
             margin-top: 15px;
             margin-left: 235px;
-
         }
-
+        
         a {
             text-decoration: none;
             color: white;
-
         }
-
         /*Part 1*/
+        
         .bookimage img {
             width: 1000px;
             height: 550px;
             padding: 0px;
         }
-
+        
         .divholder {
             display: flex;
             justify-content: center;
         }
-
+        
         .divholder div {
             display: inline-block;
         }
-
+        
         .bookimage {
             padding-right: 320px;
             padding-top: 90px;
         }
-
+        
         .textoverlap {
             padding: 60px;
             position: absolute;
@@ -189,7 +182,7 @@
             margin: -60px;
             background: whitesmoke;
         }
-
+        
         .textoverlap h2 {
             color: #666666;
             font-size: 42px;
@@ -197,7 +190,7 @@
             padding: 10px;
             font-weight: unset;
         }
-
+        
         .textoverlap p {
             color: gray;
             text-align: center;
@@ -206,72 +199,66 @@
             margin-top: 25px;
             font-size: 18px;
         }
-
+        
         hr {
             width: 15%;
             margin-bottom: 100px;
         }
-
-
         /*Part-2*/
+        
         div div {
             display: inline-block;
         }
-
+        
         .bookss {
             display: inline-block;
             margin-left: 38px;
             margin-bottom: 60px;
         }
-
+        
         #b11 {
             width: 242px;
             height: 259px;
         }
-
+        
         #b22 {
             width: 214px;
             height: 261px;
-
         }
-
+        
         #b33 {
             width: 263px;
-
         }
-
+        
         #b44 {
             width: 227px;
         }
-
+        
         .p1 {
             text-align: center;
             width: 198px;
             font-size: 16px;
             margin-left: 155px;
-
-
         }
-
+        
         .BuyBtn {
-            background-color:#FAA0A0 ;
+            background-color: #FAA0A0;
             border-color: transparent;
             border-radius: 10px;
             padding: 7px 15px;
             color: white;
             margin-left: 220px;
         }
-
+        
         .fourthB {
             margin-left: 303px;
             margin-top: 34px;
         }
-
+        
         .price {
             margin-right: 161px;
-
         }
-
+        
         .p2 {
             text-align: center;
             margin-left: 155px;
@@ -279,7 +266,7 @@
             width: 198px;
             text-transform: uppercase;
         }
-
+        
         #SelfB {
             font-size: 50px;
             text-align: center;
@@ -289,42 +276,38 @@
             color: black;
             padding-top: 100px;
         }
-
+        
         .firstB {
             margin-left: 65px;
         }
-
-
         /*Part-3*/
+        
         .link1 {
             font-size: 20px;
             color: black;
             text-align: center;
             width: 20px;
-
         }
-
+        
         .data1 {
             width: 20px;
             padding-bottom: 50px;
         }
-
+        
         #table1 {
             width: 50%;
-
             margin-right: 10px;
         }
-
+        
         .name1 {
             width: 50%;
             padding-left: 181px;
         }
-
+        
         #pc1 {
             width: 60%;
-
         }
-
+        
         #podcast {
             font-size: 55px;
             text-align: center;
@@ -334,35 +317,35 @@
             color: black;
             padding-top: 100px;
         }
-
+        
         .row {
             margin-right: 30px;
         }
-
+        
         .TB {
             margin-left: -10px;
         }
-
         /*Part-4*/
+        
         .colorL,
         .colorL1,
         .colorL2 {
             color: black;
             text-align: center;
         }
-
+        
         .table2 {
             border: black solid 2px;
             border-collapse: collapse;
             text-align: center;
         }
-
+        
         .roww {
             border: black solid 2px;
             border-collapse: collapse;
             text-align: center;
         }
-
+        
         .data01,
         .head {
             text-align: center;
@@ -370,71 +353,66 @@
             border: black solid 2px;
             height: 100px;
         }
-
+        
         .table2 {
             margin-left: 135px;
             margin-top: 48px;
-           
-
         }
-
+        
         #part4 {
             text-align: center;
             text-transform: uppercase;
             color: black;
-            
             margin-top: 114px;
             font-size: 55px;
             font-family: sans-serif;
             font-weight: bolder;
             color: black;
-    padding-top: 100px;
-
+            padding-top: 100px;
         }
-
+        
         #hr4 {
             width: 315px;
         }
-
+        
         .data01:hover {
             background-color: rgb(244, 194, 194);
             ;
         }
-
+        
         .head:hover {
             background-color: #FAA0A0;
-            
         }
-
+        
         #Table02 {
             margin-left: -5px;
             padding-right: 109px;
         }
-
+        
         #div-tabela {
             background: whitesmoke;
             padding-bottom: 120px;
         }
-
+        
         .data1 video {
             padding-left: 123px;
         }
-
+        
         #audio {
             display: flex;
             justify-content: center;
             margin-bottom: 100px;
         }
-
+        
         #audio div {
             display: inline-block;
             padding: 50px 150px;
         }
-
-        #audio2 h4{
+        
+        #audio2 h4 {
             text-align: center;
         }
-
+        
         #audioh {
             font-size: 55px;
             text-align: center;
@@ -444,63 +422,67 @@
             color: black;
             padding-top: 100px;
         }
-
-        .onlineform{
-            padding: 10px 30px;}
-            .onlineform{
+        
+        .onlineform {
+            padding: 10px 30px;
+        }
+        
+        .onlineform {
             display: flex;
             justify-content: center;
         }
-
-        .onlineform nav{
+        
+        .onlineform nav {
             display: inline-block;
         }
-
-        .onlineform nav form{
+        
+        .onlineform nav form {
             width: 600px;
             background-color: whitesmoke;
             padding: 48px 50px;
             margin-left: 25px;
         }
-
-        .inputinfo{
+        
+        .inputinfo {
             padding: 10px 30px;
         }
-
-        .inputinfo input{
+        
+        .inputinfo input {
             background-color: whitesmoke;
             border-top: none;
             border-left: none;
             border-right: none;
             border-bottom: 2px solid darkslategray;
         }
-
-        .inputinfo input, .inputinfo label{
-            font-size:18px;
+        
+        .inputinfo input,
+        .inputinfo label {
+            font-size: 18px;
         }
-
-        #f_name{
+        
+        #f_name {
             margin-right: 60px;
             width: 170px;
         }
-
-        #f_lastname{
-            margin-right:23px;
+        
+        #f_lastname {
+            margin-right: 23px;
             width: 170px;
         }
-
-        #f_mail{
+        
+        #f_mail {
             margin-right: 64px;
             width: 170px;
         }
-
-        input#f_comment{
+        
+        input#f_comment {
             width: 300px;
             width: 300px;
             border: 1px solid black;
             padding: 50px;
         }
-        .inputinfo button{
+        
+        .inputinfo button {
             background-color: white;
             border: none;
             border-radius: none;
@@ -508,22 +490,22 @@
             font-size: 18px;
             font-weight: bolder;
         }
-
-        .inputinfo button:hover{
+        
+        .inputinfo button:hover {
             transform: scale(1.1);
             transition: transform 1s;
             background-color: #FAA0A0;
             color: white;
             cursor: pointer;
         }
-
-        .onlineform nav img{
+        
+        .onlineform nav img {
             width: 700px;
             height: 603px;
             padding-left: 135px;
         }
-
-        .onlineformheading{
+        
+        .onlineformheading {
             font-size: 55px;
             text-align: center;
             text-transform: uppercase;
@@ -532,31 +514,30 @@
             color: black;
             padding-top: 100px;
         }
-
-</style>
+    </style>
 </head>
 
 <body>
     <header style="background: white; color: rgba(255, 255, 255, 0.5);">
         <div class="hovermenu">
             <h1>
-              self-help blog
+                self-help blog
             </h1>
-              <nav class="fill">
+            <nav class="fill">
                 <ul>
-                  <li><a href="projekti.html" target="_self">Home</a></li>
-                  <li><a href="about.html" target="_self">About</a></li>
-                  <li><a href="blog.html" target="_self">Blog</a></li>
-                  <li><a href="books.html" target="_self">Resources</a></li>
-                  <li><a href="more.html" target="_self">More</a></li>
-                  <a href="slidingform.html" target="_self" style="text-decoration: none;"><span style="
+                    <li><a href="projekti.html" target="_self">Home</a></li>
+                    <li><a href="about.html" target="_self">About</a></li>
+                    <li><a href="blog.html" target="_self">Blog</a></li>
+                    <li><a href="books.html" target="_self">Resources</a></li>
+                    <li><a href="more.html" target="_self">More</a></li>
+                    <a href="slidingform.html" target="_self" style="text-decoration: none;"><span style="
                     margin-left: 200px;
                     font-size:17px;
                     text-transform: uppercase;
                     font-weight: 700;
                     color: #FAA0A0;">Log In</span></a>
                 </ul>
-              </nav>
+            </nav>
         </div>
     </header>
 
@@ -568,8 +549,8 @@
         <div class="textoverlap">
             <h2>Endless Resources</h2>
             <p>
-                Scroll down to find the newest, most helpful books,<br> podcasts and inspirational videos from
-                people<br> that have experienced it all.
+                Scroll down to find the newest, most helpful books,<br> podcasts and inspirational videos from people
+                <br> that have experienced it all.
             </p>
         </div>
     </div>
@@ -590,41 +571,67 @@
         <div class="firstB">
             <p class="p2"><b>Introducing The Mind, Body, Soul
                     Balance Guide</b></p>
+<<<<<<< Updated upstream
             <img src="images/b1.png" id="b11">
             <p class="p1">A self-care journal to help you create more time for what you love without burning yourself
                 out</p>
+=======
+            <img src="b1.png" id="b11">
+            <p class="p1">A self-care journal to help you create more time for what you love without burning yourself out
+            </p>
+>>>>>>> Stashed changes
             <p class="price">$22</p>
             <button onclick="myFunction()" class="BuyBtn"><a href="buy_now.html" target="_blank">Buy now</a></button>
         </div>
         <div class="secondB">
             <p class="p2"><b>The Ultimate Self-Care Toolkit</b></p>
+<<<<<<< Updated upstream
             <img src="images/b2.png" id="b22">
             <p class="p1">A digital collection of the best self-care tips, tricks, and tools to nourish your mind, body,
                 and soul</p>
+=======
+            <img src="b2.png" id="b22">
+            <p class="p1">A digital collection of the best self-care tips, tricks, and tools to nourish your mind, body, and soul</p>
+>>>>>>> Stashed changes
             <p class="price">$10</p>
             <button class="BuyBtn" onclick="myFunction()"><a href="buy_now.html" target="_blank">Buy now</a></button>
         </div>
         <div class="thirdB">
             <p class="p2"><b>The Ultimate Mindset Affirmations Toolkit</b></p>
+<<<<<<< Updated upstream
             <img src="images/b3.png" id="b33">
             <p class="p1">A practical affirmations guide for overthinkers to reduce stress, gain confidence, and
                 overcome limiting beliefs</p>
+=======
+            <img src="b3.png" id="b33">
+            <p class="p1">A practical affirmations guide for overthinkers to reduce stress, gain confidence, and overcome limiting beliefs</p>
+>>>>>>> Stashed changes
             <p class="price">$10</p>
             <button class="BuyBtn" onclick="myFunction()"><a href="buy_now.html" target="_blank">Buy now</a></button>
         </div>
         <div class="fourthB">
             <p class="p2"><b>Master Your Mindset Journaling Guide</b></p>
+<<<<<<< Updated upstream
             <img src="images/b4.png" id="b44">
             <p class="p1">A guide to starting a daily journaling routine for a healthier mindset (even if you don't know
                 what to write about)</p>
+=======
+            <img src="b4.png" id="b44">
+            <p class="p1">A guide to starting a daily journaling routine for a healthier mindset (even if you don't know what to write about)</p>
+>>>>>>> Stashed changes
             <p class="price">$10</p>
             <button class="BuyBtn" onclick="myFunction()"><a href="buy_now.html" target="_blank">Buy now</a></button>
         </div>
         <div class="fifthB">
             <p class="p2"><b>Daily Mindset Journal</b></p>
+<<<<<<< Updated upstream
             <img src="images/b5.png" id="b44">
             <p class="p1">A printable daily journal template to elevate your thoughts, improve your confidence, and move
                 you closer to your goals</p>
+=======
+            <img src="b5.png" id="b44">
+            <p class="p1">A printable daily journal template to elevate your thoughts, improve your confidence, and move you closer to your goals</p>
+>>>>>>> Stashed changes
             <p class="price">$5</p>
             <button class="BuyBtn" onclick="myFunction()"><a href="buy_now.html" target="_blank">Buy now</a></button>
         </div>
@@ -699,75 +706,19 @@
 
     </div>
 
-<!--
+
+
+
+    <!--Part 4-->
+
     <h2 id="audioh">Podcasts</h2>
     <hr>
-
-    <nav id="audio">
+    <section id="audio">
         <div id="audio1">
             <audio width="40%" controls>
                 <source src="audio files/The Secret of Becoming Mentally Strong _ Amy Morin _ TEDxOcala.mp3.crdownload">
             </audio>
-            <h4>The secret of becoming mentally strong</h4>
-
-    <div class="TB"> 
-    <table id="table1">
-        <tr class="row">
-            <td class="data1">
-               <video width="400px" height="225px" controls>
-                   <source src="videos/How to Love Yourself & Be Confident in Who You Are (Ep. 1_ Life As An Optimist Podcast).mp4" type="video/mp4">
-               </video>
-               <p class="name1"> <a href="https://www.youtube.com/watch?v=j2dFMrJWvUY" class="link1">How to Love Yourself & Be Confident in Who You Are (Ep. 1: Life As An Optimist)</a></p>
-            </td>
-            <td class="data1">
-                <video width="400px" height="225px" controls>
-                    <source src="src=videos/Moira on loving and accepting yourself in all forms & seasons _ Kwentos with Hannah Ep. 7.mp4">
-                </video>
-               <p class="name1"> <a href="https://www.youtube.com/watch?v=VVDkNw6qpJQ" class="link1">Moira on loving and accepting yourself in all forms & seasons</a></p>
-            </td>
-            <td class="data1">
-                <video width="400px" height="225px" controls>
-                    <source src="videos/Self-Love Is Everything_ Kamal Ravikant _ Rich Roll Podcast.mp4">
-                </video>
-                <p class="name1"> <a href="https://www.youtube.com/watch?v=w-IO3WEFYWQ" class="link1">Self-Love Is Everything: Kamal Ravikant | Rich Roll Podcast</a></p>
-            </td>
-        </tr>
-        <br>
-        <tr class="row">
-            <td class="data1">
-                <video width="400px" height="225px" controls>
-                    <source src="videos/Self-Love, be Intentional _ Caitlyn Roux _ TEDxYouth@CapeTown.mp4">
-                </video>
-                <p class="name1"><a href="https://www.youtube.com/watch?v=DCNOJmmHLkQ" class="link1">Self-Love, be Intentional | Caitlyn Roux</a></p> 
-            </td>
-            <td class="data1">
-                <video width="400px" height="225px" controls>
-                    <source src="videos/Meditation for Self Love  _  Yoga With Adriene.mp4">
-                </video>
-                <p class="name1"> <a href="https://www.youtube.com/watch?v=CqnWMPuyT0g"class="link1">Meditation for Self Love | Yoga With Adriene</a></p>
-            </td>
-            <td class="data1">
-                <video width="400px" height="225px" controls>
-                    <source src="videos/SELF-LOVE Habits that CHANGED my LIFE!.mp4">
-                </video>
-                <p class="name1"><a href="https://www.youtube.com/watch?v=fdBenN6x7GU" class="link1">SELF-LOVE Habits that CHANGED my LIFE!</a></p> 
-            </td>
-        </tr>
-    </table></div>
-
-</div>-->
-
-
-<!--Part 4-->
-
-<h2 id="audioh">Podcasts</h2>
-<hr>
-<section id="audio">
-    <div id="audio1">
-        <audio width="40%" controls>
-            <source src="audio files/The Secret of Becoming Mentally Strong _ Amy Morin _ TEDxOcala.mp3.crdownload">
-        </audio>
-        <h4 class="h4jq">The secret of becoming mentally strong</h4>
+            <h4 class="h4jq">The secret of becoming mentally strong</h4>
 
         </div>
         <div id="audio2">
@@ -775,85 +726,78 @@
                 <source src="audio files/The skill of self confidence _ Dr. Ivan Joseph _ TEDxRyersonU.mp3">
             </audio>
             <h4 class="h4jq">The skill of self confidence</h4>
-            
+
 
         </div>
-            <script>
-            $(document).ready(function(){
-              $(".h4jq").mouseup(function(){
-                alert("Mouse up over Podcast");
-              });
+        <script>
+            $(document).ready(function() {
+                $(".h4jq").mouseup(function() {
+                    alert("Mouse up over Podcast");
+                });
             });
-            </script>
-    </nav>
+        </script>
+        </nav>
 
-</section>
-
-   
-
-    
-
-    
+    </section>
 
 
+    <!--Part 5-->
+    <div>
+        <div id="Table02">
+            <h2 id="part4">Self-Esteem Resources for Girls</h2>
+            <hr id="hr4">
+            <table class="table2">
+                <tr class="roww">
+                    <th class="head"></th>
+                    <th class="head">Self Esteem Resources for Young Girls (Ages 5–11)</th>
+                    <th class="head">Self-Esteem Resources for Teen Girls (Ages 12–18)</th>
+                    <th class="head">Self-Esteem Resources for Adults Who Work With Girls</th>
+                </tr>
+                <tr class="roww">
+                    <td class="data01">Web Pages</td>
+                    <td class="data01">
+                        <p class="colorL">
 
-<!--Part 5-->
-<div>
-    <div id="Table02">
-        <h2 id="part4">Self-Esteem Resources for Girls</h2>
-        <hr id="hr4">
-        <table class="table2">
-            <tr class="roww">
-                <th class="head"></th>
-                <th class="head">Self Esteem Resources for Young Girls (Ages 5–11)</th>
-                <th class="head">Self-Esteem Resources for Teen Girls (Ages 12–18)</th>
-                <th class="head">Self-Esteem Resources for Adults Who Work With Girls</th>
-            </tr>
-            <tr class="roww">
-                <td class="data01">Web Pages</td>
-                <td class="data01">
-                    <p class="colorL">
-
-                        <dl class="colorL">
-                            <dt class="colorL"><a class="colorL"
+                            <dl class="colorL">
+                                <dt class="colorL"><a class="colorL"
                                     href="https://www.understood.org/articles/en/how-to-build-self-esteem">How to help
                                     build self-esteem during challenging times</a></dt>
-                            <dt class="colorL"><a class="colorL"
+                                <dt class="colorL"><a class="colorL"
                                     href="https://www.therapistaid.com/therapy-worksheets/self-esteem/children">Self-Esteem
                                     Worksheets for Children</a></dt>
-                            <dt class="colorL"><a class="colorL"
+                                <dt class="colorL"><a class="colorL"
                                     href="https://yourteenmag.com/health/teenager-mental-health/building-self-esteem-in-girls">5
                                     Important Ways to Help Build Self-Esteem In Girls</a></dt>
-                        </dl>
+                            </dl>
                         </p>
                     </td>
                     <td class="data01">
                         <p class="colorL1">
-                        <dl class="colorL1">
-                            <dt class="colorL1"><a class="colorL1"
+                            <dl class="colorL1">
+                                <dt class="colorL1"><a class="colorL1"
                                     href="https://kidshealth.org/en/teens/confidence.html">Confidence (for Teens)</a>
                             </dt>
-                            <dt class="colorL1"><a class="colorL1"
+                                <dt class="colorL1"><a class="colorL1"
                                     href="https://yourteenmag.com/teenager-school/teenager-middle-school/empowering-tween-girls">Empowering
                                     Tween Girls: The Five Super Powers Every Girl Needs </a></dt>
-                            <dt class="colorL1"><a class="colorL1"
+                                <dt class="colorL1"><a class="colorL1"
                                     href="https://biglifejournal.com/blogs/blog/build-self-esteem-confidence-teens">15
                                     Tips To Build Self-Esteem and Confidence in Teens</a></dt>
-                        </dl>
+                            </dl>
                         </p>
                     </td>
                     <td class="data01">
                         <p class="colorL2">
-                        <dl class="colorL2">
-                            <dt class="colorL2"><a class="colorL2" href="https://www.amightygirl.com/">A Mighty Girl
+                            <dl class="colorL2">
+                                <dt class="colorL2"><a class="colorL2" href="https://www.amightygirl.com/">A Mighty Girl
                                 </a></dt>
-                            <dt class="colorL2"><a class="colorL2"
+                                <dt class="colorL2"><a class="colorL2"
                                     href="https://yourteenmag.com/teenager-school/teenager-middle-school/building-confidence-in-girls">Sidestep
                                     a Confidence Slump: Building Confidence in Tween Girls</a></dt>
-                            <dt class="colorL2"><a class="colorL2"
+                                <dt class="colorL2"><a class="colorL2"
                                     href="https://www.understood.org/en/friends-feelings/empowering-your-child/celebrating-successes/ways-praise-can-empower-kids-learning-differences">How
                                     To Praise Children</a></dt>
-                        </dl>
+                            </dl>
                         </p>
                     </td>
 
@@ -915,8 +859,7 @@
         <div class="call">
             <img src="call.png">
             <p>
-                <span>Call:<br></span>
-                T: 123-456-7890<br> F: 123-456-7890
+                <span>Call:<br></span> T: 123-456-7890<br> F: 123-456-7890
             </p>
         </div>
         <div class="mail">
@@ -934,8 +877,7 @@
             </h5>
         </div>
         <div class="copyright">
-            <p>&copy;Proudly created by: <br>
-                Bleona Jashari,Besarta Kurtaj, Blinera Kadriu</p>
+            <p>&copy;Proudly created by: <br> Bleona Jashari,Besarta Kurtaj, Blinera Kadriu</p>
         </div>
     </footer>
 
