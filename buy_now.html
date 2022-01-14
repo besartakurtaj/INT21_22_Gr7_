@@ -156,33 +156,35 @@ section .buy-now .formF .inputF p a{
                 <h2 id="title">Buy now</h2>
                 <form>
                     <div class="inputF">
-                        <keygen name="username" keytype="RSA"> Username
-                        <input type="text" name="username">
-                        <!--<span>Username</span>
-                        <input type="text" name="" required>-->
+                        <span>Username</span>
+                        <input type="text" name=""  required>
                     </div>
                     <div class="inputF">
                         <span>Email</span>
-                        <input type="email" name="" required autocomplete="on">
+                        <input type="email" required autocomplete="on">
                     </div>
                     <div class="inputF">
                         <span>Password</span>
-                        <input type="password" name="" id="pww" oninput="validatePw()" minlength="9" class="input-pww"required autocomplete="on" >
+                        <input type="password" id="pww" oninput="validatePw()" minlength="9" class="input-pww"required autocomplete="on" >
                     </div>
                     <script>
                       var regexExp=new RegExp("^(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])");
                       let pwwI=document.getElementById('pww');
                       
                       function validatePw(){
-                        regexExp.test(pwwI.value)?pwwI.setCustomValidity(""): pwwI.setCustomValidity("Your password should include 1 UPPERCASE letter, 1 ......")
+                        regexExp.test(pwwI.value)?pwwI.setCustomValidity(""): pwwI.setCustomValidity("Your password should include 1 UPPERCASE letter, 1 lowercase and 1 number")
                       }</script>
                     <div class="inputF">
                         <span>Phone number</span>
-                        <input type="text" name="" required autocomplete="on" pattern="[0-9]{9}">
+                        <input type="text" id="numberTel" required autocomplete="on" pattern="[0-9]{9}">
                     </div>
+                    <script>
+                        let x = NaN;
+                        document.getElementById("numberTel").innerHTML = x;
+                        </script>
                     <div class="inputF">
                         <span>Sasia</span>
-                        <input type="number" name=""required autocomplete="on">
+                        <input type="number" required autocomplete="on">
                     </div>
                     
                     <div class="remember">
@@ -193,7 +195,7 @@ section .buy-now .formF .inputF p a{
                     </div>
                     <div class="inputF">
                         <label for="rating">How satisfied are you with our products?</label>
-                        <input list="rating1" name="rating" id="rating">
+                        <input list="rating1" name="rating" id="rating" required>
                         <datalist id="rating1">
                         <option value="Excellent">
                         <option value="Very nice">
