@@ -48,6 +48,7 @@
     margin-bottom: 80px;
     margin-top: 180px;
     border-radius: 30px;
+    border: 0.5px solid hsl(14, 88%, 65%);
     height: 509px;
     width: 920px;
     display: grid;
@@ -271,6 +272,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 200px;
+  padding-top: 50px;
 }
 
 .form {
@@ -522,7 +525,7 @@ textarea.input {
   border-radius: 50%;
   background: linear-gradient(to bottom, lightpink, #faa0a0);
   bottom: 50%;
-  right: 50%;
+  right: 40%;
   transform: translate(-40%, 38%);
 }
 

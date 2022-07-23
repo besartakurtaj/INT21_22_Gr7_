@@ -265,7 +265,7 @@ a#b3 {
 
 .flex-holder {
     display: flex;
-    background-color: whitesmoke;
+    background-color: #ececec;
     margin-top: 60px;
 }
 
@@ -274,7 +274,8 @@ a#b3 {
 }
 
 .flexkid-1 {
-    margin-right: 20px;
+    margin-right: 50px;
+    padding-left: 50px;
 }
 
 .flexkid-1 h3 {
@@ -297,7 +298,7 @@ a#b3 {
 }
 
 .flexkid-1 p button {
-    background-color: #E83556;
+    background-color: #b32a43;
     border-color: transparent;
     border-radius: 10px;
     padding: 7px 15px;
@@ -349,12 +350,13 @@ figcaption {
 }
 
 .articles {
-    background-color: #E83556;
-    padding: 65px 45px;
+    background-color: #b32a43;
+    padding: 70px 50px;
 }
 
 .articles:hover {
-    background-color: #9B2339;
+    background-color: #bcbcbc;
+    color: black;
     transform: scale(1.1);
     transition: transform 1s;
 }
@@ -496,7 +498,7 @@ figcaption {
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
-    background-color: #E83556;
+    background-color: #b32a43;
 }
 
 #see_answers a {
@@ -509,10 +511,10 @@ figcaption {
 }
 
 #see_answers:hover {
-    background-color: #9B2339;
+    background-color: black;
     transform: scale(1.2);
-    transition: transform 1s;
-    color: white;
+    transition: transform 1.6s;
+    color: black;
     cursor: pointer;
 }
 
@@ -525,7 +527,7 @@ figcaption {
 
 /**Mail list form and geolocation**/
 
-.information {
+#information {
     display: flex;
 }
 
@@ -536,7 +538,7 @@ figcaption {
 
 .subscribe form {
     width: 350px;
-    background-color: whitesmoke;
+    background-color: #ececec;
     padding-top: 20px;
     padding-left: 90px;
     padding-bottom: 40px;
